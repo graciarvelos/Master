@@ -15,15 +15,15 @@ from ase.visualize import view
 # 
 #  File needs to have the water coordinates: O, H1 and H2
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-dados=np.genfromtxt("properties.xyz",skip_header=1)
+dados=np.genfromtxt("./positive/3.0/ts_pd_monomer.xyz",skip_header=1,skip_footer=108)
 
 #complete=np.genfromtxt("ts_au_scatt.xyz",skip_header=1)
 #dados=complete[0:97,:]
 #initial=read('initial.xyz')
 #view(initial)
-final=read("properties.xyz")
+#final=read("properties.xyz")
 #x,y,z = np.loadtxt("waterF.xyz", unpack=True)
-view(final)
+#view(final)
 
 x = dados[-3::,1]
 y = dados[-3::,2]
@@ -61,8 +61,8 @@ A = np.dot(vetor1,vetor2)
 B = np.sqrt(np.dot(vetor1,vetor1))
 C = np.sqrt(np.dot(vetor2,vetor2))
 costheta= A/(B*C)
-theta=180.0*np.arccos(costheta)/3.1415926535897932385
-print ("Angle between H: ", theta) 
+theta=180.0*np.arccos(costheta)/np.pi
+print ("Theta: ", theta) 
 print ('------------------------------------------------------------------')
 
 print ('                        WATER/SURFACE                             ')
@@ -75,19 +75,19 @@ C = np.sqrt(np.dot(normal_z,normal_z))
 cosalpha= A/(B*C)
 alpha=180.0*np.arccos(cosalpha)/np.pi
 print ("Angle between dipolo and normal_z: ", alpha) 
-print ("Alpha: ", alpha-90) 
+print ("Alpha: ", -alpha+90) 
 print ('------------------------------------------------------------------')
 
 print ('               LATERAL AND VERTICAL DISPLACEMENT                      ')
 
-Pd=dados[-10,1:4]
+Pd=dados[-8,1:4]
 O=dados[-3,1:4]
-#O_inicial=inicial[-3,1:4]
 vertical=Pd[2]-O[2]
 delta=((Pd[0]-O[0])**2+(Pd[1]-O[1])**2)**0.5
 h=(vertical**2+delta**2)**0.5
 
 
-print ("The Lateral displacement is: ",delta)
-print ("Vertical position: ",h) 
+print ("DOxy: ",delta)
+print ("O-Metal: ",h) 
 print ('------------------------------------------------------------------')
+
