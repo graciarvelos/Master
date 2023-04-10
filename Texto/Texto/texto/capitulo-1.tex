@@ -1,0 +1,209 @@
+\chapter{Teoria do Funcional da Densidade\label{cap:denf}}
+
+A descrição atomística das interações água/sólido fornece informações da natureza das ligações. Para lidar com essa escala de caracterização é necessário tratar os átomos e moléculas no âmbito da Mecânica Quântica. Isso implica obter a função de onda de um sistema de N elétrons por meio da solução da Equação de Schr\"{o}dinger, o que é inviável de se obter analiticamente. Nesse sentido, a Teoria do Funcional da Densidade (\textit{Density Functional Theory}--DFT) emerge como um eficiente método para a descrição das propriedades estruturais e eletrônicas do sistema a partir da densidade eletrônica.
+
+Nesse capítulo serão apresentados os fundamentos da Teoria do Funcional da Densidade, abrangendo desde o advento dessa Teoria em 1964 por meio dos \textit{Teoremas de Hohenberg-Kohn} (Seção \ref{teoremas}) até os esforços atuais em desenvolver Funcionais de Troca e correlação não locais que incluam forças de dispersão. A principal implicação desses teoremas é a possibilidade de reescrever a Equação de  Schr\"{o}dinger de um sistema de N elétrons em função da densidade eletrônica, como foi realizado pelas \textit{Equações de Kohn-Sham}. Essa abordagem e as principais aproximações para o termo de troca e correlação serão descritas na Seção \ref{kohn}.
+
+
+\section{Teoremas de Hohenberg-Kohn\label{teoremas}}
+
+A \textit{Densidade Eletrônica} é uma quantidade fundamental no desenvolvimento da Teoria do Funcional da Densidade. Para tanto, um sistema que possua N elétrons, tem a densidade eletrônica definida como:
+\begin{equation}\label{eq:rho}
+	\dens=eN\int\abs{\Psi(\vb{r},\vb{r}_2,\ldots,\vb{r}_N)}^2 \dd{\vb{r}_2},\ldots,\dd{\vb{r}_N}. 
+\end{equation}  
+
+De acordo com a interpretação usual da Mecânica Quântica $ \Psi^{\ast}(\vb{r})\Psi(\vb{r}) $ é definida como a Densidade de Probabilidade de encontrar um elétron no qual o estado físico num certo instante é determinado pela Função Onda $ \Psi(\vb{r}) $. Logo, segue que a Densidade Eletrônica representa a Densidade de Probabilidade de encontrar um elétron na posição $ \vb{r} $ independente da posição dos outros N-1 elétrons. 
+
+No sistema de N elétrons a interação \textit{elétron-elétron} ocorre através da repulsão coulombiana, de modo que a repulsão é a mesma em qualquer sistema. Por outro lado, a interação \textit{núcleo-elétron} que atua como um potencial externo aos elétrons é responsável por definir a hamiltoniana de um sistema. Em suma, como o potencial externo define a hamiltoniana, consequentemente determina a Função de Onda e a Densidade Eletrônica.
+
+
+Devido ao fato desse potencial ser independente do tempo e considerando as grandezas escritas em unidades atômicas, é possível reescrever a equação de Schr\"{o}dinger da seguinte forma:
+\begin{equation}\label{eq:ham_ind_time}
+	\bqty{-\frac{1}{2}\sum_{i=1}^{N}\laplacian_i+\sum_{i=1}^{N} w(\vb{r}_i)+\frac{1}{2}\sum_{i,j=1}^{N}\nu(\vb{r}_i-\vb{r}_j)} \Psi = E \Psi
+\end{equation}
+
+Onde o primeiro termo corresponde à energia cinética, $ w(\vb{r}_i) $ representa o potencial externo aos elétrons e $ \nu(\vb{r}_i-\vb{r}_j) $ é o termo de repulsão entre os elétrons.
+
+A relação entre o potencial externo e a densidade pode ser representada pela seguinte aplicação matemática:
+\begin{equation}
+	w(\vb{r})\Rightarrow \hat{H} \Rightarrow \Psi(\vb{r}) \Rightarrow\dens
+\end{equation}
+Isto é, 
+\begin{equation}
+	A: w(\vb{r}) \Rightarrow \dens
+\end{equation}
+
+A DFT mostra que essa aplicação é inversível, ou seja, é possível obter o potencial externo a através da densidade eletrônica.
+\begin{equation}
+	A^{-1}:\dens \Rightarrow w(\vb{r})
+\end{equation} 
+Ou seja,
+\begin{equation}
+	\dens \Rightarrow w(\vb{r}) \Rightarrow \hat{H} \Rightarrow \Psi(\vb{r})
+\end{equation}
+
+Assim, $ \dens $ determina a Função de Onda do sistema e, consequentemente, suas propriedades. 
+
+As consequências dessa aplicação resultaram em dois teoremas provados por Hohenberg e Kohn e que forneceram as bases teóricas para o desenvolvimento da DFT em 1964 \cite{dft_originals}. As demonstrações desses teoremas estão descritas no Apêndice \ref{provas}.
+
+\begin{teo}\label{teo1}
+	Em um sistema de N partículas interagindo em um potencial externo $ w(\vb{r}) $, a densidade eletrônica é unicamente determinada. Em outras palavras, o potencial externo é um funcional único da densidade, a menos de uma constante arbitrária .
+\end{teo}
+
+\begin{teo}\label{teo2}
+	Um funcional universal $ F\bqty{\dens} $ pode ser definido em termos da densidade, ou seja esse funcional é o mesmo para todos os problemas de estrutura eletrônica. A energia do Estado Fundamental correspondente ao mínimo do funcional de energia $ E_0\bqty{\denzero} $ é obtida a partir da densidade exata do Estado Fundamental $ \rho_0 $ \cite{abc_dft}.
+\end{teo}
+
+De acordo com o Teorema \ref{teo2}, a Energia do Estado Fundamental de um sistema com N elétrons pode ser obtida quando o funcional $ E[\dens] $ atinge um mínimo global e obedece ao vínculo $ \int \dens\dd\vb{r} =N$. Portanto, o funcional de energia $  E[\dens] $ satisfaz a um Princípio Variacional,
+\begin{equation}\label{eq:dev_funcional}
+	\fdv{\bqty{ E[\dens]-\lambda\pqty{\int \dens\dd\vb{r} -N}}}{\rho}=0
+\end{equation}
+ onde $ \delta $ é a derivada funcional e $ \lambda $ é um multiplicador de Lagrange.
+
+%\textbf{Observação:} Por definição, um funcional $ F\bqty{f(x)}:f(x)\rightarrow y $ mapeia uma função em um número, de modo que a derivada funcional é definida por:
+%\begin{equation}
+%	F\bqty{f(x)+\delta f(x)}-F\bqty{f(x)}=\int \fdv{F\bqty{f(x)}}{f(x)} \delta f(x)
+%\end{equation} 
+
+
+Em termos do funcional universal $ F\bqty{\dens} $, a derivada funcional resulta em:
+
+\begin{equation}\label{eq:derivada_funcional}
+	\fdv{F\bqty{\dens}}{\rho}+w(\vb{r})-\lambda=0
+\end{equation}
+
+A densidade exata é aquela na qual a derivada funcional de $ F\bqty{\dens} $ é igual ao negativo do potencial externo a menos de uma constante. No entanto, a forma exata para o funcional $ F\bqty{\dens} $ é desconhecida, de modo que $ F\bqty{\dens}  $ é determinado de forma aproximada. Uma das propostas para descrever o funcional universal $ F\bqty{\dens} $ mais bem sucedidas foi sugerida em 1965 pelos cientistas W. Kohn e L. J. Sham \cite{kohn_sham}, no qual os autores propõem descrever a densidade eletrônica do estado fundamental como a densidade eletrônica de um sistema auxiliar de partículas não interagentes. Os detalhes dessa abordagem serão tratados na próxima seção.
+
+\section{Equações de Kohn-Sham\label{kohn}}
+
+%Através das aproximações para o funcional de \textit{Energia Cinética}  $ T\bqty{\dens}$, o problema de resolver a Equação de  Schr$ \"{o} $dinger de um sistema de N elétrons, se reduz a encontrar um funcional que descreva as interações cinéticas do sistema. Apesar da engenhosidade e simplicidade, as aproximações para o termo $ T\bqty{\dens}$  não apresentam bons resultados, pois, de modo geral, a contribuição desse termo é da ordem de grandeza da \textit{Energia Total}, logo uma descrição incorreta desse termo implica erros na energia total e na densidade eletrônica. \cite{abc_dft}
+
+Para obter as Equações de Kohn-Sham, partimos da seguinte questão: quais funções de uma partícula $ \varphi_i $ de um sistema auxiliar não interagente minimizam o \textit{Funcional de Energia} $ E\bqty{\dens} $?
+
+A solução dessa questão é dada pela minimização da equação dada pelos multiplicadores de Lagrange:
+\begin{equation}
+	\fdv{E\bqty{\dens}}{\varphi_i^{\ast}}=0
+\end{equation}
+
+cujo vínculo é dado pela condição de ortonormalidade dos orbitais $ \psi_i $:
+\begin{equation}\label{eq:cons}
+	\int \dd{\vb{r}}\varphi_i^{\ast}(\vb{r})\varphi_i(\vb{r})=1
+\end{equation} 
+onde, $ \varphi_i $ não corresponde, necessariamente, à função de onda de uma partícula, mas sim a qualquer função ou conjunto de funções capazes de representar a densidade eletrônica de forma satisfatória.
+
+
+Assim, dado um potencial externo aos elétrons $ w(\vb{r}) $, o Funcional de energia $ E\bqty{\dens} $ é dado por:
+\begin{equation}\label{eq:Total}
+	E[\dens]=\int\rho(\vb{r}) w(\vb{r})\dd{\vb{r}} + F[\dens]
+\end{equation}
+
+De acordo com o Teorema \ref{teo2}, existe um \textit{Funcional Universal} $ F\bqty{\dens} $ válido para todo sistema coulombiano. Assim, a abordagem proposta por W. Kohn e L. J. Sham \cite{kohn_sham}, descreve o funcional universal da seguinte forma: 
+\begin{equation}\label{eq:funcional_KS}
+	F\bqty{\dens}=\frac{1}{2}\int \int \dens\nu({\vb{r}-\vb{r'}})\denslinha \dr \drlinha +T_0\bqty{\dens}+E_{xc}\bqty{\dens}
+\end{equation}
+
+De modo que a densidade eletrônica $ \dens $ corresponde a:
+\begin{equation}\label{eq:densi}
+	\dens= \sum_{i=1}^{N}\varphi_i^{\ast}(\vb{r})\varphi_i(\vb{r})
+\end{equation}
+
+O termo $ T_0\bqty{\dens} $ é o funcional da energia cinética de um sistema de N elétrons sem interação e que possua a mesma densidade eletrônica do sistema interagente. Esse sistema hipotético ocorre quando $ \nu({\vb{r}-\vb{r'}})\equiv 0 $, de modo que o sistema é descrito por:
+\begin{equation}\label{eq:t0}
+	T_0\bqty{\Psi_0}=\ev{\hat{T}}{\Psi_0}=-\frac{1}{2}\sum_{i=1}^{N}\ev{\laplacian_i}{\varphi_{i}}
+\end{equation} 
+
+Assim, o termo $ E_{xc}\bqty{\dens} $ é denominado \textit{Energia de Troca e Correlação} e fornece as correções entre o funcional real da Energia Cinética $ T\bqty{\dens} $ e o funcional de um sistema de elétrons não interagentes $  T_0\bqty{\dens}  $, bem como provém as correções entre o funcional que descreve a repulsão entre os elétrons e o \textit{Potencial de Hartree} \cite{rev_dft}.
+
+Portanto, utilizando o funcional universal $ F\bqty{\dens} $ dado pela expressão \eqref{eq:funcional_KS}, a energia total dada pela equação \eqref{eq:Total} corresponde a:
+\begin{equation}
+	E\bqty{\dens}=T_0\bqty{\dens}+\int\dens w(\vb{r})\dr + \frac{1}{2}\iint \dens\nu({\vb{r}-\vb{r'}})\denslinha \dr \drlinha + E_{xc}\bqty{\dens}
+\end{equation}
+
+Aplicando o \textit{Princípio Variacional} é possível determinar qual conjunto de funções $ \varphi_{i} $ sujeitas ao vínculo $ \int \dens \dr=N $ minimizam a energia total:
+\begin{equation}\label{eq:variacional}
+	\fdv{E\bqty{\dens}}{\phialfac}=0
+\end{equation}
+
+Desse modo, a derivada funcional aplicada ao termo $ T_0\bqty{\dens} $ descrito na equação \eqref{eq:t0} resulta em:
+\begin{equation}
+	\fdv{T_0\bqty{\dens}}{\phialfac}=-\frac{1}{2}\laplacian{\varphi_{\alpha}(\vb{r})}
+\end{equation}
+
+Considerando-se a derivada funcional da densidade, obtém-se:
+\begin{equation}
+	\fdv{\denslinha}{\phialfac}=\delta(\vb{r}-\vb{r'})\phialfa
+\end{equation}
+
+Logo, para o termo de interação coulombiana, a derivada funcional resulta em:
+\begin{equation}\label{1.19}
+	\fdv{}{\phialfac}\bqty{\frac{1}{2}\iint \dens\nu(\vb{r}-\vb{r'})\denslinha \dr \drlinha }=\underbrace{\bqty{\int \dens \nu(\vb{r}-\vb{r'})}}_{\text{$V_H$}}\phialfa = V_H \phialfa
+\end{equation}
+
+O termo $ V_H $ da Equação (\ref{1.19}) corresponde ao \textit{Potencial de Hartree}. Por fim, a minimização aplicada ao termo de \textit{Energia de Troca e Correlação} obtemos:
+\begin{equation}\label{eq:derivada_correlacao}
+	\fdv{E_{xc}\bqty{\dens}}{\phialfac}=\int \fdv{E_{xc}\bqty{\dens}}{\denslinha}\underbrace{\fdv{\dens}{\phialfac}}_{\delta(\vb{r}-\vb{r'})\phialfa}=\underbrace{\bqty{\fdv{E_{xc}\bqty{\dens}}{\dens}}}_{\text{$v_{xc}$}}\phialfa = v_{xc} \phialfa
+\end{equation}
+
+Onde $ v_{xc} $ é o \textit{potencial de troca e correlação}. Assim, somando as expressões acima, a equação \eqref{eq:variacional} resulta em:
+\begin{equation}\label{eq:kohn-sham}
+	\bqty{-\frac{1}{2}\laplacian+V_H(\vb{r})+w(\vb{r})+v_{xc}}\phialfa=\varepsilon_{\alpha} \phialfa
+\end{equation}
+
+A equação \eqref{eq:densi} junto com a equação \eqref{eq:kohn-sham} são denominadas \textit{Equações de Kohn-Sham} \cite{lecture_KS}.
+
+As equações de Kohn-Sham permitem resolver o problema pelo método de auto consistência, além de simplificar o problema de determinar uma função que depende de 3N variáveis para o caso de encontrar N funções que depende de três variáveis. As equações de Kohn-Sham são exatas e unicamente definidas para cada sistema físico \cite{abc_dft}. No entanto, a forma exata para o termo de troca e correlação não é conhecida, de modo que esse termo é determinado por meio de aproximações locais, não locais ou combinação de ambas \cite{fazio_livro}.
+
+
+
+
+\subsection{Aproximação da Densidade Local (LDA)}
+
+A \textit{Aproximação da Densidade Local} foi a primeira aproximação proposta para o termo de Troca e Correlação, sugerida ainda em 1965 por W. Kohn e L. J. Sham \cite{kohn_sham}. No âmbito da aproximação LDA um sistema real não homogêneo é visto como a soma de regiões homogêneas que se comportam como um gás uniforme de elétrons e que possui energia de troca e correlação dada por $\varepsilon_{xc}^{h}(\dens) $. Assim, a energia de troca-correlação total é obtida integrando-se sobre todo o espaço desse sistema não homogêneo:
+\begin{equation}
+	E^{LDA}_{xc}\bqty{\dens}=\int \dens\varepsilon_{xc}^{h}(\dens)\dr.
+\end{equation}
+
+A energia de troca e correlação do gás de elétrons $ \varepsilon_{xc}^{h} $ pode ser separada em duas expressões: um termo de \textit{Troca} $ \varepsilon_{x}^{h} $ e outro termo de \textit{Correlação} $ \varepsilon_{c}^{h} $. O primeiro trata-se da energia de troca de um gás homogêneo de elétrons e corresponde a um termo exato, ao passo que a correlação $ \varepsilon_{c}^{h} $ foi obtido por meio de simulações de Monte Carlo quântico por \citeauthor{ceperley}. Detalhes sobre essas energias são fornecidas no Apêndice \ref{apd:funcional}, seção \ref{sec:lda}.
+
+A aproximação LDA descreve satisfatoriamente sistemas onde a densidade de carga varia lentamente em uma escala atômica, ou seja, cada região do sistema comporta-se como o gás uniforme de elétrons. Em contrapartida, quando aplica-se o funcional LDA à sistemas reais que não se comportam como um gás homogêneo, acontece uma superestimação da energia de correlação. Por esse motivo, por muitos anos a LDA foi largamente usada para cálculos de estrutura eletrônica em sólidos, porém foi pouco utilizada na química quântica. A fim de melhorar os resultados obtidos via LDA, é necessário considerar as taxas de variações da densidade por meio de correções não locais, mensuradas através do \textit{gradiente} \cite{revista-quimica}.
+%
+%Nesse sentido, com o intuito de melhoras a aproximação LDA, acrescenta-se correções não locais, a fim de tratar a não homogeneidade da densidade eletrônica. 
+
+\subsection{Aproximações Não Locais}
+
+As \textit{Aproximações Não Locais} emergiram com o intuito de acrescentar correções não locais à aproximação LDA, considerando-se a não homogeneidade da densidade eletrônica. A primeira aproximação que surgiu nesse âmbito foi a \textit{Aproximação da Expansão do Gradiente}(GEA) sugerida inicialmente por W. Kohn e L. J. Sham \cite{kohn_sham}, que inclui correções da forma $ \abs{\grad{\dens}}, \abs{\grad{\dens}}^2, \laplacian{\dens} $, etc., à aproximação LDA. Na prática, todavia, as correções fornecidas pelos termos de gradiente de ordem mais baixa não melhoraram a aproximação LDA e os termos de ordem superiores são dificilmente calculados. Nessa perspectiva, a \textit{Aproximação do Gradiente Generalizado} representou um grande avanço ao fornecer resultados satisfatórios utilizando expressões mais gerais envolvendo a densidade $ \dens $  e o gradiente da densidade $ \grad{\dens} $ em cada ponto $ \vb{r} $ \cite{capelle}.  
+
+
+
+\subsubsection{Aproximação do Gradiente Generalizado (GGA)}
+
+
+A \textit{ Aproximação do Gradiente Generalizado} (GGA) constitui uma aproximação \textit{semi-local}, tal que o funcional de Troca e Correlação possui a forma geral dada por:
+\begin{equation}
+	E_{xc}^{GGA}\bqty{\dens}= \int\varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}}\dens\dr.
+\end{equation}
+
+
+Essa aproximação representa uma classe de aproximações, de modo que diferentes escolhas para a densidade de energia $ \varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}}$ geram diferentes GGAs, ao contrário da LDA, onde a energia $ \varepsilon_{xc}^{h}\pqty{\dens} $ é unicamente determinada. A aproximação para a energia de troca e correlação  $ \varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}} $ pode ser obtida por métodos \textit{semi empíricos} ou obtidas por métodos de \textit{primeiros princípios} (\textit{ab initio}) \cite{capelle}.
+
+
+Aproximações obtidas via primeiros princípios são obtidas teoricamente por meio de condições exatas ou assintóticas dentro da teoria da Mecânica Quântica, enquanto que aproximações semi empíricas utilizam algumas simplificações baseadas em resultados experimentais e em outros resultados teóricos \cite{rev_dft}. No âmbito de aproximações \textit{ab-initio} a que se destaca, atualmente, é a aproximação GGA-PBE obtida por \citeauthor{PBE}, enquanto que para aproximações semi empíricas a que se destaca é a BLYP \cite{blyp_b,blyp_b-2}. 
+
+Para o caso da aproximação PBE, o funcional de energia de \textit{troca} é expresso como:
+\begin{equation}
+	E^{PBE}_{x}\bqty{\dens}=\int \dens \varepsilon_{x}^{hom}(\dens)F^{PBE}_x(\rho,\grad{\rho})\dr
+\end{equation}
+onde $ \varepsilon_{x}^{hom}(\dens) $ corresponde à energia de troca por partícula para um gás de elétrons homogêneo com densidade $ \dens $ e $ F^{PBE}_x $ é denominado \textit{fator de amplificação} \cite{rev_dft}. O fator de amplificação é uma função analítica conhecida que mensura o quanto o termo de troca difere do termo de troca da aproximação LDA \cite{abc_dft}. 
+
+Em comparação com a aproximação LDA, a PBE e suas variações apresentam de forma geral melhores resultados para moléculas, melhorando as energias de ligação e de atomização; para estruturas cristalinas, fornece bons resultados para a energia de coesão, bem como descreve de forma satisfatória os parâmetros de rede e as propriedades magnéticas de metais \cite{rev_dft}. No entanto, a aproximação PBE não inclui termos de dispersão, de modo que essa aproximação não descreve de forma satisfatória sistemas que possuam interações de van der Walls e ligações de hidrogênio \cite{vdw_solidos}. 
+
+%\todo[inline,color=green!40]{Falar melhor da descrição da água com o funcional PBE e a importância do funcional VDW.}
+
+%\subsubsection{Aproximação Meta-Gradiente Generalizado (Meta-GGA)}
+
+\subsubsection{Aproximação de van der Walls}\label{vdw}
+
+Interações de van der Walls são interações intermoleculares fracas que surgem devido à atração entre dipolos induzidos em átomos neutros. Tais interações são dominantes em sistemas moleculares tais como biomoléculas, moléculas em superfícies e cristais moleculares. Esse processo ocorre através do momento de dipolo induzido no interior de uma molécula que consequentemente provoca uma polarização nas moléculas da vizinhança. Como resultado, essas interações são não locais \cite{article_vdw}.  
+
+De modo geral, as interações de troca e correlação de uma família de funcionais de van der Waals são descritas pela soma das seguintes contribuições: um termo de troca descrito por um funcional do tipo GGA, um termo de correlação local dada pelo funcional LDA e um termo de correlação não-local. Um dos primeiros funcionais que se propôs a tratar interações desse tipo surgiu em 2004 sugerido por \citeauthor{DRSLL} (VDW-DRSLL). No entanto, apesar desse funcional descrever as propriedades de alguns sistemas satisfatoriamente, ele apresentou resultados inferiores aos funcionais do tipo GGA para sistemas que apresentam ligações de hidrogênio \cite{vdw_solidos}. Ao longo dos anos algumas otimizações foram propostas para o funcional VDW-DRSLL, uma das quais sugerida por \citeauthor{vdw-bh} (VDW-BH) e que utilizamos nesse trabalho. Detalhes sobre as expressões que descrevem os funcionais do tipo VDW estão descritos na Apêndice \ref{apd:funcional}, Seção \ref{sec:vdw} e sobre as aproximações LDA e PBE estão na Seção \ref{sec:gga}.
+

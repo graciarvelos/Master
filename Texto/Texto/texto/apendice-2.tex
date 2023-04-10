@@ -1,0 +1,115 @@
+\chapter{Cálculo de Superfícies}
+
+O estudo da composição química e do arranjo atômico da superfície de um sólido permite determinar as propriedades mecânicas, elétricas e químicas de um material e possui aplicações práticas em processos de catálise, na fabricação de interfaces e membranas, além de fornecer importantes resultados na fabricação de semicondutores \cite{density-book}.
+
+Dessa forma, na Seção \ref{slab} será apresentado o modelo computacional de uma superfície: \textit{o modelo de slab}. Além disso, serão estudadas as orientações cristalográficas de uma superfície construída a partir de uma estrutura \textit{fcc}. Na Seção \ref{work} será estudado o conceito de \textit{Função Trabalho}.
+\section{Construção e Orientação de uma Superfície\label{slab}}
+
+A construção do modelo ideal de uma superfície pode ser pensado a partir de um cristal infinito em duas dimensões e finito ao longo da direção normal, no qual o arranjo atômico da estrutura cristalina \textit{bulk} é preservada; esse modelo é denominado \textit{bulk-terminated}. Por outro lado, ao modelar uma superfície real deve-se levar em conta que, quando a periodicidade da rede cristalina é quebrada, os átomos que estão próximos à superfície estão sujeitos à forças diferentes daquelas que atuavam no interior do cristal. Isso leva os átomos a se rearranjarem e ocuparem novas posições de equilíbrio, diferentes das posições da estrutura bulk. % O rearranjo atômico por relaxação corresponde à diminuição da distância  interplanar entre a primeira e a segunda camada, conservado-se a simetria original paralela à superfície \textit{bulk-terminated}. No processo de reconstrução os átomos se posicionam em uma simetria e orientação diferente da original \cite{surface-book}. Na Figura \ref{fig:relaxacao} está ilustrado a diferença das posições atômicas em cada arranjo para uma estrutura fcc cuja orientação original corresponde a (110).
+
+Para implementar esses modelos nos cálculos computacionais aplica-se as condições periódicas de contorno nas duas dimensões e na direção normal repete-se as camadas após uma camada de vácuo, essa configuração é denominada \textit{slab} e está ilustrado na Figura \ref{fig:slab1}. Assim, nesse modelo forma-se várias camadas de superfície separadas por espaços vazios, como pode ser visto na Figura \ref{fig:slab2}. Nesse sentido, para obter uma descrição mais realística possível através do modelo slab, é necessário que o tamanho do vácuo seja largo o suficiente para que a densidade eletrônica do material tenda a zero no vácuo e não influencie os átomos da próxima camada e que as camadas sejam finas o bastante para modelar a superfície \cite{density-book}.
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=0.45]{figs/relaxacao.png}
+%	\caption{\textit{Modelo ideal de uma superfície fcc de orientação (100). Fonte: Adaptado de \cite{surface-book}}}
+%	\label{fig:relaxacao}
+%\end{figure}
+
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}            
+		\includegraphics[scale=0.5]{figs/slab1.jpg}
+		\caption{\textit{Exemplo de uma célula unitária que compõe a superfície de um sólido. Fonte: \citeauthor{density-book}}}
+		\label{fig:slab1}
+	\end{subfigure}\;\;
+	%add desired spacing between images, e. g. ~, \quad, \qquad etc.
+	%(or a blank line to force the subfigure onto a new line)
+	\begin{subfigure}[b]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.4]{figs/slab4.png}
+		\caption{\textit{Ilustração do modelo de superfície de um sólido, no qual se aplica as condições de contorno nas três dimensões. Fonte: \citeauthor{surface-book}.}}
+		\label{fig:slab2}
+	\end{subfigure}
+	\caption{\textit{Ilustrações do modelo slab de uma superfície.}}\label{fig:slab}
+\end{figure} 
+
+Dentre as diversas maneiras de rearranjar os átomos de uma superfície, deve-se levar em conta os diferentes planos cristalográficos de um cristal, ao longo dos quais revelam distintas posições atômicas de uma superfície. Dessa forma, a notação que descreve os planos cristalográficos de um cristal é dado pelos \textit{Índices de Miller} \cite{density-book}. 
+
+A orientação de um plano cristalográfico é dado pela direção do vetor normal $ \vb{n} $ à esse plano. O vetor $ \vb{n} $ é dado em termos dos vetores de base $ \Bqty{\vb{g}_i}_{i=1}^{3} $ do espaço recíproco $ \vb{n}=h\vb{g}_1+k\vb{g}_2+l\vb{g}_3 $. Na notação dos índices de Miller o vetor normal é descrito por: $ \bqty{hkl} $, ao passo que a orientação do plano cristalino é identificada pela notação $ (hkl) $ \cite{surface-book}.
+
+%Os índices de Miller de uma plano cristalográfico podem ser definidos a partir dos vetores do espaço real, para isso basta especificar os pontos no qual o plano intersecta alguns dos três eixos do cristal e em seguida, tomar o inverso dos valores do conjunto de pontos, que correspondem aos respectivos pontos no espaço recíproco. 
+
+%Na Figura \ref{fig:100-plane} está ilustrado o plano (001) de uma estrutura cristalina \textit{cúbica de face centrada} (fcc); analisando a figura, nota-se que o plano intersecta somente o eixo \textit{z}, de modo que, o valor dos pontos de interseção no espaço recíproco equivale a $ \pqty{\frac{1}{\infty},\frac{1}{\infty},1} $, resultando na identificação (001). Se o plano intersecta o eixo \textit{x, y} e \textit{z} nos respectivos pontos iguais a 1, então a identificação do plano é (111). 
+
+%\begin{figure}[H]
+%	\centering
+%	\begin{subfigure}[b]{0.4\textwidth}       %     
+	%		\includegraphics[scale=1.15]{figs/fcc.png}
+	%		\caption{\textit{Ilustração do plano cristalográfico (001) de uma estrutura fcc. Fonte: \citeauthor{density-book}}}
+	%		\label{fig:100-plane}
+	%	\end{subfigure}\;\;
+%add desired spacing between images, e. g. ~, \quad, \qquad etc.
+%(or a blank line to force the subfigure onto a new line)
+%	\begin{subfigure}[b]{0.4\textwidth}
+	%		\centering
+	%		\includegraphics[scale=0.4]{figs/fcc2.png}
+	%		\caption{\textit{Ilustração do plano cristalográfico (111) de uma estrutura fcc. Fonte: \citeauthor{density-book}.}}
+	%		\label{fig:111-plane}
+	%	\end{subfigure}
+%	\caption{\textit{Planos cristalográficos %de uma estrutura fcc}}\label{fig:plane}
+%\end{figure} 
+
+Aém disso, a densidade de átomos em uma superfície varia de acordo com a orientação. Como por exemplo, para uma estrutura cúbica de face centrada, a orientação de maior densidade é (111). Isso é importante, pois geralmente, a superfície construída com a orientação cristalográfica que abrange a maior densidade de átomos é mais estável \cite{density-book}. Essa colocação pode ser ilustrada a partir da visão frontal das posições atômicas, exibida na Figura \ref{fig:top}. Além disso, é possível identificar simetrias de rotação existentes em cada orientação \cite{density-book}.  
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{figs/top-view.png}
+	\caption{\textit{Vista frontal da posição dos átomos de uma superfície de orientação (100), (111) e (110). Fonte: \citeauthor{density-book}}.}
+	\label{fig:top}
+\end{figure}
+\section{Função Trabalho\label{work}}
+A \textit{função trabalho} é definida como a energia mínima necessária para remover um elétron do interior de um sólido. Além disso, constitui um importante conceito para o estudo de metais. O valor da função trabalho depende das propriedades da superfície e das características do interior do sólido, uma vez que existem distorções na distribuição da carga eletrônica na superfície que afetam níveis eletrônicos distantes. Esses efeitos são fundamentais para descrever fenômenos como emissão termiônica, efeito fotoelétrico, potencial de contato e qualquer outro fenômeno no qual os elétrons sejam extraídos de uma superfície.  
+
+Os efeitos da quebra de simetria de um cristal infinito e como isso afeta a energia necessária para remover um elétron podem ser ilustrados por meio de uma comparação qualitativa entre o potencial periódico de um cristal infinito $V^{inf}(\vb{r}) $, com o potencial $ V^{fin}(\vb{r}) $ de um cristal finito. Assim, em um estrutura cristalina infinta, o potencial $ V^{inf}(\vb{r}) $ pode ser representado como a soma das contribuições da célula primitiva de \textit{Wigner-Seitz}\footnote{\textit{Célula primitiva de Wigner-Seitz: é a célula primitiva que mantém a simetria completa da rede cristalina \cite{estado-solido2}.}} sobre cada ponto do cristal à uma distância $ \vb{R} $, tal que a expressão seja dada por: 
+\begin{equation}\label{eq:v-inf}
+	V^{inf}(\vb{r})=\sum_{\vb{R}}v(\vb{r}-\vb{R})
+\end{equation}
+Considerando que, o potencial da célula primitiva sobre cada ponto do cristal seja dado pelo potencial de Hartree, então:
+\begin{equation}
+	v(\vb{r})=-e\int_C \dd{\vb{r'}}\denslinha\frac{1}{\vqty{\vb{r}-\vb{r'}}}
+\end{equation}
+onde, a integral é realizada sobre a célula primitiva e $ \dens $ é a densidade de carga eletrônica. Assim, o efeito do potencial periódico dado pela Equação \eqref{eq:v-inf} a uma distância muito longa ($ r'\gg r $) pode ser escrito em termos da expansão multipolar:
+\begin{eqnarray}
+	\frac{1}{\vqty{\vb{r}-\vb{r'}}}&=&\frac{1}{r}-(\vb{r'}\cdot\grad)\frac{1}{r}+\frac{1}{2}(\vb{r'}\cdot\grad)^2\frac{1}{r}+\ldots \nonumber\\ &=&\frac{1}{r}+\frac{\vb{r'}\cdot\vu{r}}{r^2}+\frac{3\pqty{\vb{r'}\cdot\vu{r}}^2-r'^2}{r^3}+\frac{1}{r}\mathcal{O}\pqty{\frac{r'}{r}^3}
+\end{eqnarray}
+resultando na seguinte expressão:
+\begin{equation}\label{eq:v-expan}
+	v(\vb{r})=-e\frac{Q}{r}-e\frac{\vb{p}\cdot\vu{r}}{r^2}+\mathcal{O}\pqty{\frac{1}{r^3}}
+\end{equation}
+Onde \textit{Q} é a carga total e $ \vb{p} $ é o momento de dipolo total, definidos por:
+\begin{equation}
+	Q=\int_{C}\dd{\vb{r'}}\denslinha\qquad \vb{p}=\int_{C}\dd{\vb{r'}}\vb{r'}\denslinha
+\end{equation}
+Analisando a Equação \eqref{eq:v-expan}, tem-se que $ Q=0 $, porque o cristal é eletricamente neutro e $ \dens $ possui a periodicidade da rede, logo cada célula primitiva é também eletricamente neutra. Além disso, como a estrutura cristalina considerada é infinita, então, devido às simetrias de inversão e cúbica, o momento de dipolo $ \vb{p} $, de quadrupolo e o termo de $ \frac{1}{r^4}$ também se anulam. Portanto, a contribuição da célula de Wigner-Seitz para $ v(\vb{r}) $ decresce com $ \frac{1}{r^5} $, ou seja, muito rápido para longas distâncias. Nesse sentido, em um cristal infinito, a contribuição de $ V^{inf}(\vb{r}) $ para longas distâncias é desprezível, de modo que a distribuição de carga não sofre distorções em nenhum ponto do cristal \cite{ashcroft}. 
+
+Por outro lado, quando um elétron é retirado de um cristal finito, na região próxima à superfície do cristal terá distorções na densidade de carga eletrônica em comparação à distribuição de carga no interior do cristal. Essas distorções estão ilustradas na Figura \ref{fig:trabalho}. Isso ocorre pois, após a retirada do elétron, as posições atômicas podem assumir novas configurações de equilíbrio que diferem das posições no interior do cristal; o rearranjo atômico vai depender das simetrias na superfície e das orientações dos planos cristalográficos. Ademais, devido à quebra de periodicidade em um cristal finito, o momento de dipolo $ \vb{p} $ próximo à superfície não é nulo, de modo que, podem surgir cargas superficiais. 
+
+Desse modo, considera-se primeiramente distorções da superfície que não induzem uma carga macroscópica líquida por unidade de área em uma superfície metálica, no qual o metal como um todo seja eletricamente neutro. Assim, a longas distâncias da superfície eletricamente neutra, tem-se que as distribuições de carga das células individuais distorcidas não produzirão campos elétricos macroscópicos líquidos. No entanto, dentro das camadas que compõe a superfície e que apresentam as distorções de carga, é induzido um campo elétrico $ \vb{E_s} $, de modo que, para mover um elétron através de uma camada é necessário executar um trabalho correspondente a $ W_s=e\int\vb{E_s}\cdot \dd{\vb{l}} $.
+
+O valor de $ W_s $ depende do tipo de superfície e também da maneira pela qual as características da superfície diferem do bulk. Em alguns modelos, a distorção de carga da superfície é representada como uma densidade uniforme superficial macroscópica de dipolos, de modo que a camada da superfície é denominada \textit{dupla camada}. Logo, a energia mínima necessária para remover um elétron do interior de um cristal para uma ponto fora do cristal é dado por:
+\begin{equation}
+	W=-E_F+W_s
+\end{equation}
+Onde $E_f$ é a \textit{Energia de Fermi}, previamente calculada para um cristal infinito \cite{ashcroft}. Na Figura \ref{fig:trabalho} está ilustrado a forma do potencial $ V $ na superfície de um cristal. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{figs/trabalho.png}
+	\caption{\textit{(a) Gráfico da densidade de carga elétrica próxima à superfície ideal de um cristal finito, no qual aparece as distorções.  As linhas tracejadas indicam as condições de contorno periódicas no interior do sólido. (b) Gráfico do potencial do cristal após aconteces as distorções descritas em (a). No gráfico está ilustrado o trabalho necessário $ W $ para retirar um elétron do campo elétrico da superfície. Fonte: \citeauthor{ashcroft}}}
+	\label{fig:trabalho}
+\end{figure}
+
+%\section{Modos Normais de Vibração}
+

@@ -1,0 +1,294 @@
+\chapter{Teoria do Funcional da Densidade \label{provas}}
+
+\section{Postulados da Mecânica Quântica\label{meq}}
+
+Ao estudar as propriedades de átomos, moléculas e sólidos é fundamental obter as autofunções da Hamiltoniana que descreve o sistema:
+\begin{equation}
+	\hat{H}=\hat{T}+\hat{V}
+\end{equation}
+
+Nesses sistemas, a contribuição para o potencial é devido às interações entre núcleo-núcleo, núcleo-elétron e elétron-elétron. A interação núcleo-elétron é uma interação Coulombiana entre o núcleo e cada elétron, onde considera-se os elétrons sujeitos a um potencial externo, o potencial do núcleo; a interação elétron-elétron ocorre entre um par de elétrons.
+
+O termo de energia cinética é dado pela soma das energias cinéticas dos elétrons e do núcleo. Por outro lado, como a massa do núcleo é significativamente maior que a massa do elétron, a contribuição do núcleo pode ser separada da parte eletrônica. Essa é a chamada  \textit{Aproximação de Born-Oppenheimer} \cite{material_1}.
+
+Logo, a hamiltoniana de um sistema de $ N_e $ elétrons e $ N_n $ núcleos é dada pela expressão:
+\begin{eqnarray}\label{eq:ham_complete}
+	\hat{H} &=& \hat{T}_{e}+\hat{V}_{ne}+\hat{V}_{ee}+\hat{V}_{nn}  \\
+	&=& -\frac{\hbar^2}{2m_e}\sum_{i}^{N_e} \grad^2_i+\frac{e^2}{4\pi \epsilon_0}\bqty{-\sum_{i}^{N_e}\sum_{I}^{N_n} \frac{Z_I}{\abs{\vb{r}_i-\vb{R}_I}} +\frac{1}{2}\sum_{i}^{N_e}\sum_{j\neq i}^{N_e}\frac{1}{\abs{ \vb{r}_i-\vb{r}_j}} +\frac{1}{2}\sum_{I}^{N_n}\sum_{J\neq I}^{N_n}\frac{Z_I Z_J}{\abs{\vb{R_I}-\vb{R_J}}}}  \nonumber
+\end{eqnarray}
+
+Onde para posições $ \vb{R_I}$ e $ \vb{R_J} $ mantidas fixas, são feitos os cálculos para a parte eletrônica.
+
+Para descrever o estado físico e a evolução temporal de uma função de onda de N elétrons é necessário recorrer aos postulados da Mecânica Quântica, dentre os quais vale destacar três:
+
+\begin{enumerate}
+	\item O \textit{estado físico} de um sistema de N elétrons sujeito a um potencial externo é representado por uma \textit{Função de Onda} $\Psi(\vb{x_1},\vb{x_2},\ldots,\vb{x_N},t)$, onde $ \vb{x}=(\vb{r},\xi)$ representa a coordenada espacial e a coordenada de spin. Essa função de onda contém toda a informação do sistema.
+	\item A evolução temporal da \textit{Função de Onda} de um sistema obedece à Equação de Schr\"{o}dinger dependente do tempo:
+	\begin{equation}\label{eq:schr}
+		i\hbar \pdv{\Psi}{t} = \hat{H}\Psi
+	\end{equation} 
+	\textbf{Observação:} Quando o potencial não depende do tempo, $ \Psi $ pode ser escrito como o produto de uma função dependente do tempo e por outra que dependa apenas de $ \vb{r} $. A parte dependente da posição satisfaz à Equação de Schr$ \"{o} $dinger  independente do tempo:
+	\begin{equation}
+		\hat{H}\Psi=E\Psi
+	\end{equation}
+	\item \label{post_anti} A função de onda de um sistema composto por N partículas idênticas pode ser \textit{simétrica} ou \textit{antissimétrica} de acordo com a permutação de um par de partículas.
+	\begin{equation}
+		\Psi(\vb{x_1},\ldots,\vb{x_i},\vb{x_j},\ldots,\vb{x_N})=\pm \Psi(\vb{x_1},\ldots,\vb{x_j},\vb{x_i},\ldots,\vb{x_N})
+	\end{equation}
+	
+	As partículas com spin inteiro possuem estados simétricos e são denominadas \textit{bósons} e partículas com spin semi-inteiro possuem estados antissimétricos e são chamados de \textit{férmions}. \cite{Zettili}
+	
+\end{enumerate} 
+Considerando o elétron, cujo spin é $ s=\frac{1}{2} $, a função de onda de uma partícula ou orbital, pode ser escrita pela expressão abaixo, onde $R_{n,l}$ é a solução da parte radial com os números quânticos \textit{n} e \textit{l}; $ \mathrm{Y}_{l,m_l}(\theta,\varphi) $ é a parte angular, cuja solução corresponde aos harmônicos esféricos com os números quânticos \textit{l} e $ m_l $ e $ \chi(\xi) $ é a solução da parte de spin, no qual os números quânticos correspondentes são $s=\frac{1}{2}$ e $ m_s=\pm \frac{1}{2} $.
+\begin{equation}
+	\varphi_{n,l,m_l,m_s}(\vb{r},\xi)=R_{n,l}(r)\mathrm{Y}_{l,m_l}(\theta,\phi)\chi_{\frac{1}{2},m_s}(\xi)
+\end{equation}
+
+De acordo com o Postulado descrito no item \ref{post_anti}, a função de N-partículas de um sistema sujeito à interação coulombiana deverá ser anti-simétrica, por se tratar de férmions. Tal função é descrita em termos do operador \textit{Permutação} ($ \hat{P} $), cuja ação realiza a permutação entre duas coordenadas $ \vb{x_i} $ e $ \vb{x_j} $. O resultado dessas permutações é denominado \textit{Determinante de Slater}.
+\begin{equation}\label{eq:wave_anti}
+	\Psi(\vb{x_1},\vb{x_2},\ldots,\vb{x_N})=\frac{1}{\sqrt{N!}}\sum^{N!}_{i=1}(-1)^{P}\hat{P}\bqty{\varphi_{n_{1},l_{1},m_{l_{1}},m_{s_{1}}}(\vb{x_1}),\ldots,\varphi_{n_{N},l_{N},m_{l_{N}},m_{s_{N}}}(\vb{x_N})}
+\end{equation}
+
+A solução exata da equação \eqref{eq:schr}, cuja hamiltoniana corresponde à equação \ref{eq:ham_complete} é inviável de ser obtida analiticamente, de modo que é necessário métodos sofisticados de aproximação teórica e computacional. Em resumo, existem duas grandes divisões nos métodos de aproximação: aproximações \textit{baseadas na função de onda}, onde \textit{Hartree-Fock} é um exemplo desse tipo, ou aproximações \textit{baseadas na densidade eletrônica}, tal como a \textit{Teoria do Funcional da Densidade (DFT)}. \cite{hf_pedroza}
+
+\section{Teoremas de Hohenberg-Kohn}
+
+\begin{lema}
+	O valor esperado do operador que representa o potencial externo $ \hat{W} $ é dado por:
+	\begin{equation}
+		\ev{\hat{W}}{\Psi}= \int w(\vb{r})\dens\dr
+	\end{equation} 
+\end{lema}
+
+\begin{proof}
+	Em um sistema de N elétrons, cuja função de onda é dada por $ \Psi= \Psi(\vb{r}_1,\ldots,\vb{r}_N) $, onde a parte de spin é ignorada, o valor esperado do operador Potencial Externo é dado por:
+	\begin{equation}
+		\ev{\hat{W}}{\Psi}=-\sum_{i}^{N} \sum_{I}^{N_n}  \displaystyle\int \Psi^{\ast}(\vb{r}_1,\ldots,\vb{r}_N) \frac{Z_i}{\abs{\vb{r}_i-\vb{R}_I}} \Psi(\vb{r}_1,\ldots,\vb{r}_N) \dd{\vb{r}_1}\ldots\dd{\vb{r}_N}
+	\end{equation}
+	
+	Expandindo o somatório sobre os termos de índice \textit{i}.
+	\begin{multline}
+		\ev{\hat{W}}{\Psi} =- \sum_{I}^{N_n} \int \Bigg[\frac{Z_I}{\abs{\vb{r}_1-\vb{R}_I}} \abs{\Psi(\vb{r}_1,\ldots,\vb{r}_N)}^{2} \dd{\vb{r}_1}\ldots\dd{\vb{r}_N} \\ + \cdots +\frac{Z_I}{\abs{\vb{r}_N-\vb{R}_I}} \abs{\Psi(\vb{r}_1,\ldots,\vb{r}_N)}^{2}  \dd{\vb{r}_1}\ldots\dd{\vb{r}_N}\Bigg] 
+	\end{multline}
+	
+	
+	Para cada um dos N termos expandidos, é possível separar os termos de interação coulombiana dos demais.
+	\begin{multline}\label{eq:prop_1}
+		\ev{\hat{W}}{\Psi} =- \sum_{I}^{N_n} \Bigg[ \int \frac{Z_I}{\abs{\vb{r}_1-\vb{R}_I}} \dd{\vb{r}_1}\int \abs{\Psi(\vb{r}_1,\ldots,\vb{r}_N)}^{2} \dd{\vb{r}_2}\dd{\vb{r}_3}\ldots\dd{\vb{r}_N} \\ + \cdots +\int \frac{Z_I}{\abs{\vb{r}_N-\vb{R}_I}} \dd{\vb{r}_N} \int \abs{\Psi(\vb{r}_1,\ldots,\vb{r}_N)}^{2}  \dd{\vb{r}_1}\ldots\dd{\vb{r}_{N-1}}\Bigg]
+	\end{multline}
+	
+	Para cada termo da equação \eqref{eq:prop_1}, a segunda integral é a definição da densidade de probabilidade $ \dens $, expressão \eqref{eq:rho}. 
+	\begin{equation}\label{eq:prop_2}
+		E_w=\ev{\hat{W}}{\Psi} =- \frac{1}{N} \sum_{I}^{N_n} \Bigg[ \int \frac{Z_I}{\abs{\vb{r}_1-\vb{R}_I}} \rho(\vb{r}_1) \dd{\vb{r}_1} + \cdots +\int \frac{Z_I}{\abs{\vb{r}_N-\vb{R}_I}} \rho(\vb{r}_N)\dd{\vb{r}_N} \Bigg]
+	\end{equation}
+	
+	Uma vez que, cada integral na equação \eqref{eq:prop_2} é independente, é possível trocar a variável de integração por um índice mudo, de modo que o valor esperado do operador Potencial Externo pode ser escrito de forma compacta. \cite{material_1}
+	\begin{equation}
+		E_w=-\sum_{I}^{N_n} \int\dens\frac{Z_I}{\abs{\vb{r}-\vb{R}_I}}\dr=\int w(\vb{r})\dens\dr
+	\end{equation}
+	
+	
+	
+\end{proof}
+
+\begin{teo}
+	Em um sistema de N partículas interagindo em um potencial externo $ w(\vb{r}) $, a densidade eletrônica é unicamente determinada. Em outras palavras, o potencial externo é um funcional único da densidade, a menos de uma constante arbitrária. \cite{abc_dft}
+\end{teo}
+
+\begin{proof}[Demonstração (Caso não degenerado)]
+	Supondo que existem dois potenciais externos $ w_1(\vb{r}) $ e $ w_2(\vb{r}) $ que possuam mesma densidade $ \dens $ para o estado fundamental e que $ w_1(\vb{r})-w_2(\vb{r})\neq cte $. Dessa forma, os potenciais $ w_1(\vb{r}) $ e $ w_2(\vb{r}) $ pertencem a hamiltonianas diferentes $ \hat{H}_1(\vb{r}) $ e $ \hat{H}_2(\vb{r}) $, determinando as funções de onda $ \Psi_1(\vb{r}) $ e $ \Psi_2(\vb{r}) $ e as energias $ E_1 $ e $ E_2 $.
+	
+	Sabendo que a energia total é dada pelo valor esperado da Hamiltoniana e denominando por $ \hat{W},\hat{T}$ e $ \hat{V} $ os respectivos operadores Potencial Externo, Energia Cinética e Repulsão entre os elétrons, tem-se que a energia do sistema é dada por:
+	\begin{equation}\label{eq:functional_energy}
+		E_w=\ev{\hat{H}}{\Psi}=\ev{\hat{W}+\hat{T}+\hat{V}}{\Psi} = \int w(\vb{r})\dens\dr+\ev{\hat{T}+\hat{V}}{\Psi}
+	\end{equation}
+	
+	Em particular, as energias totais $ E_1 $ e $ E_2 $ devido aos potenciais externos $ w_1(\vb{r}) $ e $ w_2(\vb{r}) $ são dadas por:
+	\begin{equation}
+		E_1=\ev{\hat{H}_1}{\Psi_1}= \int w_1(\vb{r})\dens\dr+\ev{\hat{T}+\hat{V}}{\Psi_1}
+	\end{equation}
+	\begin{equation}
+		E_2=\ev{\hat{H}_2}{\Psi_2}= \int w_2(\vb{r})\dens\dr+\ev{\hat{T}+\hat{V}}{\Psi_2}
+	\end{equation}
+	
+	Por sua vez, $ E_1 $ é a energia do Estado Fundamental e corresponde ao menor valor esperado de $ \hat{H}_1 $.
+	\begin{equation}
+		E_1 < \ev{\hat{H}_1}{\Psi_2} = \int w_1(\vb{r})\dens\dr+\ev{\hat{T}+\hat{V}}{\Psi_2}
+	\end{equation}
+	
+	Reescrevendo o primeiro termo da expressão acima como:
+	\begin{equation}
+		\int w_1(\vb{r})\dens\dr=\int  \bqty{w_1(\vb{r})-w_2(\vb{r})+w_2(\vb{r})}\dens\dr
+	\end{equation}
+	
+	Obtém-se a seguinte expressão:
+	\begin{equation}\label{eq:en_fund1}
+		E_1<\int \bqty{w_1(\vb{r}-w_2(\vb{r})}\dd[3]{r}+E_2
+	\end{equation}
+	
+	De modo análogo, para a energia do Estado Fundamental $ E_2 $ obtém-se:
+	\begin{equation}\label{eq:en_fund2}
+		E_2<\int \bqty{w_2(\vb{r})-w_1(\vb{r})}\dd[3]{r} +E_1
+	\end{equation}
+	
+	Somando as expressões \eqref{eq:en_fund1} e \eqref{eq:en_fund2}, chega-se ao absurdo matemático:
+	\begin{equation}
+		E_1+E_2<E_1+E_2
+	\end{equation}
+	
+	Portanto, o potencial externo é um funcional unicamente determinado pela densidade a menos de uma constante.
+\end{proof}
+\begin{teo}
+	Um funcional universal $ F\bqty{\dens} $ pode ser definido em termos da densidade, ou seja esse funcional é o mesmo para todos os problemas de estrutura eletrônica. A energia do Estado Fundamental correspondente ao mínimo do funcional de energia $ E_0\bqty{\denzero} $ é obtido a partir da densidade exata do Estado Fundamental $ \rho_0 $. \cite{abc_dft}
+\end{teo}
+
+\begin{proof}[Demonstração]
+	
+	Uma consequência imediata do Teorema \ref{teo1}, é o fato de que a hamiltoniana e função de onda são funcionais da densidade, de modo que a energia do sistema total $ E\bqty{\dens} $, equação \eqref{eq:functional_energy}, pode ser reescrita como:
+	\begin{equation}\label{eq:func_energy-2}
+		E\bqty{\dens}= T\bqty{\dens}+ V\bqty{\dens}+\int w(\vb{r})\dens\dr \equiv F\bqty{\dens} +\int w(\vb{r})\dens\dr
+	\end{equation}
+	
+	Onde $  F\bqty{\dens} $ representa um funcional universal, pois a energia cinética e o potencial interno dos elétrons é o mesmo para todos os sistemas e independe do potencial externo. \cite{abc_dft}
+	
+	A prova da segunda parte do Teorema parte do fato de que tanto o potencial externo, quanto a função de onda são funcionais únicos da densidade eletrônica, de modo que a Função de Onda do Estado Fundamental fornece o menor valor possível da energia. Assim, considerando um potencial externo $ w(\vb{r}) $, suponha que a densidade exata do Estado Fundamental $ \denzero $ não corresponda à Energia do Estado Fundamental e que exista outra densidade $ \rho'(\vb{r})\neq \denzero  $ que produza: 
+	\begin{equation}
+		E\bqty{\rho'(\vb{r})}< E\bqty{\denzero} \Rightarrow \ev{\hat{H}}{\Psi'}<\ev{\hat{H}}{\Psi}
+	\end{equation}
+	
+	No entanto, a Função de Onda $ \Psi(\vb{r}) $ corresponde à Função de Onda do Estado Fundamental e produz o menor valor esperado possível, de modo que a desigualdade acima é inconsistente. Portanto, $ E\bqty{\denzero} $ atinge o mínimo quando $ \denzero $ for a densidade eletrônica do Estado Fundamental. 
+\end{proof}
+
+A densidade exata é aquela na qual a derivada funcional de $ F\bqty{\dens} $ é igual ao negativo do potencial externo a menos de uma constante. No entanto, a forma exata para o funcional $ F\bqty{\dens} $ é desconhecida, de modo que $ F\bqty{\dens}  $ é determinado de forma aproximada. Isto posto, é razoável supor que a densidade eletrônica num ponto $ \vb{r} $ equivale a $ \dens $ e em outro ponto $ \vb{r'} $ equivale a $ \rho(\vb{r'}) $, de modo que a energia de interação entre duas densidades eletrônicas é dada pela interação coulombiana.
+\begin{equation}\label{eq:exp_F_V}
+	V\bqty{\rho}=\frac{1}{2}\iint \frac{\dens\rho(\vb{r'})}{\abs{\vb{r}-\vb{r'}}}\dr\dd{\vb{r'}}
+\end{equation}
+
+Assim, o funcional universal pode ser escrito como $ F\bqty{\dens}=V\bqty{\dens}+T\bqty{\dens} $, onde $ V\bqty{\dens} $ é dado pela expressão \eqref{eq:exp_F_V} e o termo cinético $ T\bqty{\dens} $ incorpora tanto a contribuição da Energia Cinética, quanto os termos de interação não considerados na expressão \eqref{eq:exp_F_V}. Aplicando a derivada funcional sobre a expressão \eqref{eq:exp_F_V}, obtém-se o denominado \textit{Potencial de Hartree}.
+\begin{equation}
+	\fdv{V\bqty{\dens}}{\rho}=\int\frac{\rho(\vb{r'})}{\abs{\vb{r}-\vb{r'}}}\dr=V_H(\vb{r})
+\end{equation}
+
+Desse modo, o desafio para resolver a Equação \eqref{eq:derivada_funcional} se torna encontrar o funcional $ T\bqty{\dens} $. 
+\begin{equation}\label{eq:funcional_T}
+	\fdv{T\bqty{\dens}}{\dens}+V_H(\vb{r})+w(\vb{r})-\lambda=0
+\end{equation}
+
+As principais aproximações para o termo $ T\bqty{\dens} $ são: \textit{Aproximação de Thomas-Fermi} e \textit{Aproximação de Von-Weizs$\ddot{a}$cker}. A primeira consiste em uma aproximação local semiclássica para a energia cinética de um gás homogêneo de elétrons não interagente em função da densidade $ \dens $. Em contrapartida, a aproximação de Von-Weizs$\"{a}$cker propõe uma correção no modelo de Thomas-Fermi incluindo o termo do gradiente da densidade, a fim de tratar o caso de densidades inomogêneas. No entanto, ambas aproximações falham ao descrever as camadas eletrônicas dos átomos e estruturas de moléculas e sólidos. Nesse sentido, as \textit{Equações de Kohn-Sham} ganham destaque especial, uma vez que a aproximação mais simples (LDA) fornece resultados mais precisos que as aproximações conhecidas para  $ T\bqty{\dens} $. \cite{rev_dft}
+
+\section{Funcionais de Troca e Correlação\label{apd:funcional}}
+
+\subsection{Aproximação da Densidade Local (LDA)\label{sec:lda}}
+
+Na aproximação LDA, considera-se que em cada ponto $ \vb{r} $ a densidade eletrônica $ \dens $ corresponde à densidade eletrônica de um \textit{gás homogêneo} de elétrons interagindo via repulsão coulombiana. No entanto, esse sistema apenas com elétrons é um sistema instável, sendo necessário, portanto, um "background" de cargas positivas inertes. Essa configuração é conhecida como \textit{Jellium} \cite{rev_dft} 
+
+No âmbito dessa aproximação, um sistema real não homogêneo é visto como a soma de regiões homogêneas que se comportam como um gás uniforme de elétrons e que possui energia de troca e correlação dada por $\varepsilon_{xc}^{h}(\dens) $. Assim, a energia de troca-correlação total é obtida integrando-se sobre todo o espaço desse sistema não homogêneo.
+\begin{equation}
+	E^{LDA}_{xc}\bqty{\dens}=\int \dens\varepsilon_{xc}^{h}(\dens)\dr
+\end{equation}
+
+Aplicando a equação \eqref{eq:derivada_correlacao} sobre o termo obtido acima para $ E_{xc}\bqty{\dens} $, obtém-se o seguinte resultado:
+\begin{equation}
+	v_{xc}^{LDA}=\fdv{E^{LDA}_{xc}}{\dens}= \varepsilon_{xc}^{h}(\dens)+\dens\pdv{\varepsilon_{xc}^{h}}{\dens} 
+\end{equation}
+
+A fim de simplificar os cálculos numéricos, a energia de troca e correlação do gás de elétrons $ \varepsilon_{xc}^{h} $ pode ser separada em duas expressões: um termo de \textit{Troca} $ \varepsilon_{x}^{h} $ e outro termo de \textit{Correlação} $ \varepsilon_{c}^{h} $, tal que:
+\begin{equation}
+	\varepsilon_{xc}^{h}=\varepsilon_{x}^{h}+\varepsilon_{c}^{h}
+\end{equation}
+
+
+O termo de troca $ \varepsilon_{x}^{h} $  trata-se da energia de troca de um gás homogêneo de elétrons e é dado analiticamente pela expressão abaixo. (Demonstração pode ser encontrada em \cite{fazio_livro}
+\begin{equation}
+	\varepsilon_{x}^{h}(\dens)=-\frac{3}{4} \pqty{\frac{3\dens}{\pi}}^{\frac{1}{3}}=-\frac{0,4582}{r_s}
+\end{equation}
+onde $ r_s $ é denominado \textit{Raio de Wigner} e corresponde a $ r_s=\pqty{3/4\pi\rho}^{1/3} $.
+
+Entretanto, o termo de correlação $ \varepsilon_{c}^{h} $ é obtido por meio de simulações de Monte Carlo obtido por Alder e Ceperley \cite{ceperley}. Eles obtiveram a Energia de Correlação por elétron para um conjunto de densidades. Dentre as parametrizações existentes para os resultados obtidos por eles, vale ressaltar duas:
+
+\begin{enumerate}
+	\item \textbf{Perdew-Zunger} \cite{perdew_zunger}
+	\begin{equation}
+		\varepsilon_{c}^{h}(r_s)=-0,0480+0,0311 \ln r_s-0,0116 r_s+0,0020r_s \ln r_s
+	\end{equation}
+	\item \textbf{Grupo de Lund} \cite{lund}
+	\begin{equation}	\varepsilon_{c}^{h}(r_s)=\alpha_1f(\alpha_2r_s)+\beta_1f(\beta_2r_s) 
+	\end{equation}
+	onde,
+	\begin{equation*}
+		f(z)=(1-z^2)\ln\pqty{1+\frac{1}{z}}+\frac{z}{2}-z^2-\frac{1}{3}
+	\end{equation*}	
+	com $\alpha_1= -0,006716 ; \alpha_2=2,5219 ; \beta_1=-0,007805$ e $\beta_2=25,0900$.
+\end{enumerate}
+
+
+\subsection{Aproximações Não Locais}
+
+\subsubsection{Aproximação do Gradiente Generalizado (GGA)\label{sec:gga}}
+A \textit{ Aproximação do Gradiente Generalizado} (GGA) constitui uma aproximação \textit{semi-local}, tal que o funcional de Troca e Correlação possui a forma geral dada por:
+\begin{equation}
+	E_{xc}^{GGA}\bqty{\dens}= \int\varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}}\dens\dr
+\end{equation}
+
+
+A \textit{Aproximação do Gradiente Generalizado} representa uma classe de aproximações, de modo que diferentes escolhas para a densidade de energia $ \varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}}$ geram diferentes GGAs, ao contrário da LDA, onde a energia $ \varepsilon_{xc}^{h}\pqty{\dens} $ é unicamente determinada. 
+
+A expressão para a energia de troca e correlação  $ \varepsilon_{xc}^{h}\pqty{\rho,\abs{\grad{\rho}}} $ pode ser obtida por diferentes métodos. Considerando aproximações \textit{ab-initio} a que se destaca, atualmente, é a aproximação PBE obtida por Perdew, Burke e Ernzerhof \cite{PBE}, enquanto que para aproximações semi empíricas a que se destaca é a BLYP \cite{blyp_b}\cite{blyp_b-2}. 
+Para o caso da aproximação PBE, o funcional de energia de \textit{troca} é expresso como:
+\begin{equation}
+	E^{PBE}_{x}\bqty{\dens}=\int \dens \varepsilon_{x}^{hom}(\dens)F^{PBE}_x(\rho,\grad{\rho})\dr
+\end{equation}
+
+Onde $ \varepsilon_{x}^{hom}(\dens) $ corresponde à energia de troca por partícula para um gás de elétrons homogêneo com densidade $ \dens $ e $ F^{PBE}_x $ é denominado \textit{fator de amplificação} \cite{rev_dft}. O fator de amplificação é uma função analítica conhecida que mensura o quanto o termo de troca difere do termo de troca da aproximação LDA \cite{abc_dft}, para a PBE é dado por: 
+\begin{equation}\label{eq:troca_pbe}
+	F_{x}^{PBE}(\rho,\grad{\rho})=1+\kappa-\frac{\kappa}{1+\mu s^2/\kappa}
+\end{equation}
+
+sendo \textit{s} o gradiente de densidade reduzida dado por:
+\begin{equation}
+	s=\frac{\abs{\grad{\rho}}}{2(3\pi^2)^{1/3}\rho^{4/3}}
+\end{equation}
+
+Onde $ \mu\approx0,21951 $ e $ \kappa$ são constantes não empíricas.
+
+O termo de correlação é dado por:
+\begin{equation}\label{eq:correlacao_pbe}
+	E_{c}^{PBE}\bqty{\dens}=\int \dens \varepsilon_{c}^{PBE}(\rho,\grad{\rho})\dr=\int \dens \bqty{\varepsilon_{c}^{h}(\dens)+\beta\tau^2(\vb{r})+\ldots}\dr
+\end{equation}
+
+sendo $  \varepsilon_{c}^{h}(\dens) $ a densidade de energia de \textit{Correlação} para um gás homogêneo de elétrons, caso LDA, $ \tau $ é o gradiente adimensional $\tau=\frac{\abs{\grad{\rho}}}{2k_s\rho}$, cuja constante $ k_s $ vale $k_s=\frac{4}{\pi}\pqty{3\pi^2\rho}^{1/3} $ e $\beta$ é uma constante não empírica \cite{rev_dft}.
+
+Dessa forma, nas expressões do termo de troca e do termo de correlação, equação \eqref{eq:troca_pbe} e \eqref{eq:correlacao_pbe} respectivamente, existem três constantes não empíricas $ (\beta, \mu, \kappa) $ que determinam a aproximação GGA-PBE. O método pelo qual os parâmetros $ \mu $ e $ \beta $ são obtidos influenciam os resultados obtidos pela aproximação GGA-PBE \cite{tese_luana}.
+
+
+A constante $ \kappa $ é obtida impondo-se o limite de \textit{Lieb-Oxford}. O limite de Lieb-Oxford impõe uma condição para a construção de funcionais de troca e correlação não empíricos, a saber:
+\begin{equation}
+	E_{xc}\bqty{\dens}\geq\lambda E_{x}^{LDA}\bqty{\dens}
+\end{equation}
+onde $ \lambda=\frac{4}{3}\frac{\pi}{3}^{1/3} C $, de modo que as constantes universais $ \lambda$ e \textit{C} não são conhecidas e determinadas a partir de aproximações \cite{l_oxford}.
+
+Para a constante $ \kappa $, o vínculo de Lieb-Oxford impõe:
+\begin{equation}
+	\kappa=\frac{\lambda}{2^{1/3}}-1=0.804	
+\end{equation}
+Para a constante $ \beta $, Perdew. et al \cite{perdew_pbe_beta}, em 2008, propusera obtê-la a partir dos dados de energia de superfície de \textit{Jellium}, enquanto o parâmetro $ \mu $ foi determinado de modo que se obtenha a expansão do gradiente de segunda ordem na energia de troca.
+
+\subsubsection{Aproximações de van der Waals\label{sec:vdw}}
+
+O funcional VDW-DRSLL foi proposto em 2004 por \citeauthor{DRSLL} e possui a seguinte forma:
+\begin{equation}\label{eq:DRSLL}
+	E^{vdw-DF1}_{xc}\bqty{\dens}=E^{GGA}_{x}\bqty{\dens}+E_{c}^{LDA}\bqty{\dens}+E^{nl}_{c}\bqty{\dens}
+\end{equation}
+O termo de troca $ E^{GGA}_{x}\bqty{\dens} $ é dado pela aproximação rev-PBE \cite{revPBE} e $ E^{nl}_{c}\bqty{\dens} $ é um termo de correlação não local dado por:
+\begin{equation}\label{eq:correlacao-artigo}
+	E^{nl}_{c}\bqty{\dens}=\frac{1}{2}\iint \dens\phi(\vb{r},\vb{r'})\denslinha\dr\drlinha
+\end{equation}
+onde $ \phi $ é uma função geral que depende de $ \vb{r}-\vb{r'} $$ q_0 $ e das densidades $ \rho $ em uma vizinhança de $ \vb{r} $ e $ \vb{r'} $ \cite{DRSLL}.
+
+Entretanto, para problemas envolvendo água o termo de troca dado pelo funcional rev-PBE não descreve satisfatoriamente problemas envolvendo água, devido ao caráter repulsivo desse funcional. Partindo do questionamento sobre a robustez do termo de correlação não local em descrever interações do tipo van der Waals, os autores \citeauthor{vdw-bh} sugeriram utilizar esse termo não local para calcular tanto o termo de \textit{troca} quanto o de \textit{correlação}. De acordo com essa abordagem, o termo de troca é dado por:
+\begin{equation}
+	\int \dd^3\vb{r}n(\vb{r})\epsilon_x^{LDA}(s)F_x^{LV-PW86r}(s)
+\end{equation}
+
+Onde o fator de amplificação LV-PW86r junta a expansão de gradiente de Langreth-Vosko ao fator de amplificação do funcional semi local PW86r. Essa adaptação apresentou melhoras na descrição de sólidos, moléculas aromáticas e superfícies cobertas. \cite{vdw-bh} 
+

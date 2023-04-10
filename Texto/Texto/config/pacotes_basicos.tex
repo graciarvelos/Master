@@ -1,0 +1,109 @@
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+% ---
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{physics} %Pacotes científicos extremamente úteis
+\usepackage{float}
+\usepackage{relsize} %aumenta o tamanho da integral
+%Pacote de Subfigura
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+%\usepackage[subfigure]{tocloft}
+%\usepackage{fixmetodonotes}
+%\usepackage[alf,abnt-etal-cite=none}{abntex2cite}
+%\usepackage[alf,abnt-etal-cite=9]{abntex2cite}
+%\usepackage[alf,abnt-etal-cite=0]{abntex2cite}
+\newtheorem{teo}{Teorema}[chapter]
+\newtheorem{mydef}{Definição}[chapter]
+\newtheorem{lema}{Lema}[chapter]
+\newtheorem{cor}{Corolário}[chapter]
+\newtheorem{prop}{Proposição}[chapter]
+\usepackage{amsfonts} 
+% or 
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{booktabs}	
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{multirow}
+%\usepackage{fancyref}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{arydshln}
+\usepackage{tablefootnote}
+\usepackage{bm}
+\usepackage{bbold}
+\usepackage{threeparttable}
+\usepackage{mathdots}
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+\usepackage{setspace}
+\usepackage{comment}
+%\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[num]{abntex2cite}	% Citações padrão ABNT
+\usepackage{cite}
+\usepackage{todonotes}
+
+
+\usepackage[symbol]{footmisc}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+
+%Redefinindo alguns comandos:
+\newcommand{\ulo}{\textsuperscript{\b{o}}}
+\newcommand{\ulaa}{\textsuperscript{\b{a}}}
+\newcommand{\dens}{\ensuremath{\rho(\vb{r})}}
+\newcommand{\densx}{\ensuremath{\rho(\vb{x})}}
+\newcommand{\denzero}{\ensuremath{\rho_{0}(\vb{r})}}
+\newcommand{\denslinha}{\ensuremath{\rho(\vb{r'})}}
+\newcommand{\dr}{\ensuremath{\dd{\vb{r}}}}
+\newcommand{\drlinha}{\ensuremath{\dd{\vb{r'}}}}
+\newcommand{\orbital}{\ensuremath{\varphi_{i}(\vb{x})}}
+\newcommand{\orbitalconj}{\ensuremath{\varphi_{i}^\ast(\vb{x})}}
+\newcommand{\base}{\ensuremath{\chi_p(\vb{x})}}
+\newcommand{\baseconj}{\ensuremath{\chi_q^{\ast}(\vb{x})}}
+\newcommand{\phialfac}{\ensuremath{\varphi_{\alpha}^{\ast}(\vb{r})}}
+\newcommand{\phialfa}{\ensuremath{\varphi_{\alpha}(\vb{r})}}
+\newcommand{\drum}{\ensuremath{\dd{\vb{r_1}}}}
+\newcommand{\drdois}{\ensuremath{\dd{\vb{r_2}}}}
+\newcommand{\densum}{\ensuremath{\rho(\vb{r_1})}}
+\newcommand{\densdois}{\ensuremath{\rho(\vb{r_2})}}
+\newcommand{\green}{\ensuremath{G(\vb{r},\vb{r'};z)}}
+\newcommand{\ham}{\ensuremath{\mathscr{H}}}
+
+\usepackage{xcolor, soul}
+\sethlcolor{yellow}
+%\newcommand{\ag}{\ensuremath{\alpha}}
+%\renewcommand{\thefigure}{Figura 13:}
