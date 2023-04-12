@@ -15,15 +15,15 @@ from ase.visualize import view
 # 
 #  File needs to have the water coordinates: O, H1 and H2
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-dados=np.genfromtxt("./negative/-9.0/ts_pd_monomer.xyz",skip_header=1,skip_footer=108)
+dados=np.genfromtxt("./positive/9.0/ts_pd_monomer.xyz",skip_header=1,skip_footer=108)
 
 #complete=np.genfromtxt("ts_au_scatt.xyz",skip_header=1)
 #dados=complete[0:97,:]
 #initial=read('initial.xyz')
 #view(initial)
-#final=read("properties.xyz")
+final=read("./positive/9.0/ts_pd_monomer.xyz")
 #x,y,z = np.loadtxt("waterF.xyz", unpack=True)
-#view(final)
+view(final)
 
 x = dados[-3::,1]
 y = dados[-3::,2]

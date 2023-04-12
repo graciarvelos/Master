@@ -1,0 +1,768 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem{bias-pd}
+\abntrefinfo{Filhol e Neurock}{FILHOL; NEUROCK}{2006}
+{FILHOL, J.-S.; NEUROCK, M. Elucidation of the electrochemical activation of
+  water over pd by first principles.
+\emph{Angewandte Chemie International Edition}, v.~45, n.~3, p. 402--406,
+  2006.}
+
+\bibitem{contex-nature}
+\abntrefinfo{N{\o}rskov et al.}{N{\O}RSKOV et al.}{2009}
+{N{\O}RSKOV, J.~K. et al. Towards the computational design of solid catalysts.
+\emph{Nature Chemistry}, v.~1, n.~1, p. 37--46, Apr 2009.
+ISSN 1755-4349.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1038/nchem.121}.}
+
+\bibitem{electro_curcinotta}
+\abntrefinfo{Darby e Cucinotta}{DARBY; CUCINOTTA}{2022}
+{DARBY, M.~T.; CUCINOTTA, C.~S. {The role of water at electrified metal-water
+  interfaces unravelled from first principles}.
+\emph{Current Opinion in Electrochemistry}, Elsevier, v.~36, p. 101118, dec
+  2022.
+ISSN 24519103.
+Dispon{\'\i}vel em:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S2451910322001831}.}
+
+\bibitem{review-nature}
+\abntrefinfo{Carrasco, Hodgson e Michaelides}{CARRASCO; HODGSON;
+  MICHAELIDES}{2012}
+{CARRASCO, J.; HODGSON, A.; MICHAELIDES, A. A molecular perspective of water at
+  metal interfaces.
+\emph{Nature Materials}, v.~11, n.~8, p. 667--674, Aug 2012.
+ISSN 1476-4660.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1038/nmat3354}.}
+
+\bibitem{rx1}
+\abntrefinfo{Velasco-Velez et al.}{VELASCO-VELEZ et al.}{}
+{VELASCO-VELEZ, J.-J. et al. The structure of interfacial water on gold
+  electrodes studied by x-ray absorption spectroscopy.
+American Association for the Advancement of Science ({AAAS}), v.~346, n.~6211,
+  p. 831--834.}
+
+\bibitem{rx2}
+\abntrefinfo{Toney et al.}{TONEY et al.}{}
+{TONEY, M.~F. et al. Voltage-dependent ordering of water molecules at an
+  electrode{\textendash}electrolyte interface.
+Springer Science and Business Media {LLC}, v.~368, n.~6470, p. 444--446.}
+
+\bibitem{sfg1}
+\abntrefinfo{Nihonyanagi et al.}{NIHONYANAGI et al.}{}
+{NIHONYANAGI, S. et al. Potential-dependent structure of the interfacial water
+  on the gold electrode.
+Elsevier {BV}, v.~573, n.~1, p. 11--16.}
+
+\bibitem{sfg2}
+\abntrefinfo{Noguchi, Okada e Uosaki}{NOGUCHI; OKADA; UOSAKI}{}
+{NOGUCHI, H.; OKADA, T.; UOSAKI, K. Molecular structure at
+  electrode/electrolyte solution interfaces related to electrocatalysis.
+Royal Society of Chemistry ({RSC}), v.~140, p. 125--137.}
+
+\bibitem{sfg3}
+\abntrefinfo{Liu e Shen}{LIU; SHEN}{}
+{LIU, W.-T.; SHEN, Y.~R. In situ sum-frequency vibrational spectroscopy of
+  electrochemical interfaces with surface plasmon resonance.
+Proceedings of the National Academy of Sciences, v.~111, n.~4, p. 1293--1297.}
+
+\bibitem{sfg_kramer}
+\abntrefinfo{Tong et al.}{TONG et al.}{2017}
+{TONG, Y. et al. Hydrophobic water probed experimentally at the gold
+  electrode/aqueous interface.
+\emph{Angewandte Chemie International Edition}, v.~56, n.~15, p. 4211--4214,
+  2017.
+Dispon{\'\i}vel em:
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.201612183}.}
+
+\bibitem{raman1}
+\abntrefinfo{Ataka, Yotsuyanagi e Osawa}{ATAKA; YOTSUYANAGI; OSAWA}{}
+{ATAKA, K. ichi; YOTSUYANAGI, T.; OSAWA, M. Potential-dependent reorientation
+  of water molecules at an electrode/electrolyte interface studied by
+  surface-enhanced infrared absorption spectroscopy.
+American Chemical Society ({ACS}), v.~100, n.~25, p. 10664--10672.}
+
+\bibitem{raman2}
+\abntrefinfo{Li et al.}{LI et al.}{}
+{LI, C.-Y. et al. In situ probing electrified interfacial water structures at
+  atomically flat surfaces.
+Springer Science and Business Media {LLC}, v.~18, n.~7, p. 697--701.}
+
+\bibitem{edl_article}
+\abntrefinfo{Magnussen e Groß}{MAGNUSSEN; GROß}{2019}
+{MAGNUSSEN, O.~M.; GROß, A. Toward an atomic-scale understanding of
+  electrochemical interface structure and dynamics.
+\emph{Journal of the American Chemical Society}, v.~141, n.~12, p. 4777--4790,
+  2019.
+PMID: 30768905.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/jacs.8b13188}.}
+
+\bibitem{michaedelis}
+\abntrefinfo{Michaelides et al.}{MICHAELIDES et al.}{2003}
+{MICHAELIDES, A. et al. General model for water monomer adsorption on
+  close-packed transition and noble metal surfaces.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~90, p. 216102, May 2003.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.90.216102}.}
+
+\bibitem{monomer}
+\abntrefinfo{Meng, Wang e Gao}{MENG; WANG; GAO}{2004}
+{MENG, S.; WANG, E.~G.; GAO, S. Water adsorption on metal surfaces: A general
+  picture from density functional theory studies.
+\emph{Phys. Rev. B}, American Physical Society, v.~69, p. 195404, May 2004.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.69.195404}.}
+
+\bibitem{vdw-bh}
+\abntrefinfo{Berland e Hyldgaard}{BERLAND; HYLDGAARD}{2014}
+{BERLAND, K.; HYLDGAARD, P. Exchange functional that tests the robustness of
+  the plasmon description of the van der waals density functional.
+\emph{Phys. Rev. B}, American Physical Society, v.~89, p. 035412, Jan 2014.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.89.035412}.}
+
+\bibitem{bias_agua1}
+\abntrefinfo{Goldsmith, Andrade e Selloni}{GOLDSMITH; ANDRADE; SELLONI}{2021}
+{GOLDSMITH, Z.~K.; ANDRADE, M.~F. C.; SELLONI, A. Effects of applied voltage on
+  water at a gold electrode interface from ab initio molecular dynamics.
+\emph{Chem. Sci.}, The Royal Society of Chemistry, v.~12, p. 5865--5873, 2021.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1039/D1SC00354B}.}
+
+\bibitem{charge1}
+\abntrefinfo{Siepmann e Sprik}{SIEPMANN; SPRIK}{1995}
+{SIEPMANN, J.~I.; SPRIK, M. Influence of surface topology and electrostatic
+  potential on water/electrode systems.
+\emph{The Journal of Chemical Physics}, v.~102, n.~1, p. 511--524, 1995.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.469429}.}
+
+\bibitem{charge2}
+\abntrefinfo{Taylor et al.}{TAYLOR et al.}{2006}
+{TAYLOR, C.~D. et al. First principles reaction modeling of the electrochemical
+  interface: Consideration and calculation of a tunable surface potential from
+  atomic and electronic structure.
+\emph{Phys. Rev. B}, American Physical Society, v.~73, p. 165402, Apr 2006.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.73.165402}.}
+
+\bibitem{hydrogen2}
+\abntrefinfo{Rossmeisl et al.}{ROSSMEISL et al.}{2006}
+{ROSSMEISL, J. et al. Calculated phase diagrams for the electrochemical
+  oxidation and reduction of water over pt(111).
+\emph{The Journal of Physical Chemistry B}, v.~110, n.~43, p. 21833--21839,
+  2006.
+PMID: 17064147.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/jp0631735}.}
+
+\bibitem{hydrogen1}
+\abntrefinfo{Skúlason et al.}{SKúLASON et al.}{2007}
+{SKúLASON, E. et al. Density functional theory calculations for the hydrogen
+  evolution reaction in an electrochemical double layer on the pt(111)
+  electrode.
+\emph{Phys. Chem. Chem. Phys.}, The Royal Society of Chemistry, v.~9, p.
+  3241--3250, 2007.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1039/B700099E}.}
+
+\bibitem{hydrogen3}
+\abntrefinfo{Sakong et al.}{SAKONG et al.}{2015}
+{SAKONG, S. et al. Density functional theory study of the electrochemical
+  interface between a pt electrode and an aqueous electrolyte using an implicit
+  solvent method.
+\emph{The Journal of Chemical Physics}, v.~142, n.~23, p. 234107, 2015.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.4922615}.}
+
+\bibitem{hydrogen4}
+\abntrefinfo{Sakong e Groß}{SAKONG; GROß}{2018}
+{SAKONG, S.; GROß, A. The electric double layer at metal-water interfaces
+  revisited based on a charge polarization scheme.
+\emph{The Journal of Chemical Physics}, v.~149, n.~8, p. 084705, 2018.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.5040056}.}
+
+\bibitem{hydrogen5}
+\abntrefinfo{Kastlunger, Lindgren e Peterson}{KASTLUNGER; LINDGREN;
+  PETERSON}{2018}
+{KASTLUNGER, G.; LINDGREN, P.; PETERSON, A.~A. Controlled-potential simulation
+  of elementary electrochemical reactions: Proton discharge on metal surfaces.
+\emph{The Journal of Physical Chemistry C}, v.~122, n.~24, p. 12771--12781,
+  2018.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/acs.jpcc.8b02465}.}
+
+\bibitem{artigo-luana}
+\abntrefinfo{Pedroza et al.}{PEDROZA et al.}{2018}
+{PEDROZA, L.~S. et al. Bias-dependent local structure of water molecules at a
+  metallic interface.
+\emph{Chem. Sci.}, The Royal Society of Chemistry, v.~9, p. 62--69, 2018.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1039/C7SC02208E}.}
+
+\bibitem{dft_originals}
+\abntrefinfo{Hohenberg e Kohn}{HOHENBERG; KOHN}{1964}
+{HOHENBERG, P.; KOHN, W. Inhomogeneous electron gas.
+\emph{Physical Review}, APS, v.~136, n.~3B, p.~B864, 1964.}
+
+\bibitem{abc_dft}
+\abntrefinfo{Burke}{BURKE}{2007}
+{BURKE, K. \emph{The ABC of DFT}. [S.l.]: Rutgers University, 2007.}
+
+\bibitem{kohn_sham}
+\abntrefinfo{Kohn e Sham}{KOHN; SHAM}{1965}
+{KOHN, W.; SHAM, L.~J. Self-consistent equations including exchange and
+  correlation effects.
+\emph{Phys. Rev.}, American Physical Society, v.~140, p. A1133–A1138, Nov
+  1965.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRev.140.A1133}.}
+
+\bibitem{rev_dft}
+\abntrefinfo{Pedroza}{PEDROZA}{2016}
+{PEDROZA, A.~C. \emph{Teoria do Funcional da Densidade - Uma Possível
+  Solução para o Problema de Muitos Elétrons da Mecânica Quântica}. 2016.}
+
+\bibitem{lecture_KS}
+\abntrefinfo{Postnikov}{POSTNIKOV}{2007}
+{POSTNIKOV, A. Total energy as functional of electron density.
+\emph{Lectures on the Density Functional Theory}, 2007.
+Dispon{\'\i}vel em:
+  \url{https://www.home.uni-osnabrueck.de/apostnik/Lectures/DFT-3.pdf}.}
+
+\bibitem{fazio_livro}
+\abntrefinfo{Fazzio, Vianna e Canuto}{FAZZIO; VIANNA; CANUTO}{2004}
+{FAZZIO, A.; VIANNA, J. D.~M.; CANUTO, S. \emph{Teoria quântica de moléculas
+  e sólidos: simulação computacional}. [S.l.]: Livraria da Física, 2004.
+ISBN 9788588325166.}
+
+\bibitem{ceperley}
+\abntrefinfo{Ceperley e Alder}{CEPERLEY; ALDER}{1980}
+{CEPERLEY, D.~M.; ALDER, B.~J. Ground state of the electron gas by a stochastic
+  method.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~45, p. 566–569, Aug
+  1980.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.45.566}.}
+
+\bibitem{revista-quimica}
+\abntrefinfo{Morgon e Custodio}{MORGON; CUSTODIO}{1995}
+{MORGON, N.~H.; CUSTODIO, R. Teoria do funcional de densidade.
+\emph{Química Nova}, v.~18, n.~1, p. 44–55, 1995.}
+
+\bibitem{capelle}
+\abntrefinfo{Capelle}{CAPELLE}{2006}
+{CAPELLE, K. A bird's-eye view of density-functional theory.
+\emph{{Brazilian Journal of Physics}}, scielo, v.~36, p. 1318–1343, 12 2006.
+ISSN 0103-9733.
+Dispon{\'\i}vel em:
+  \url{http://www.scielo.br/scielo.php?script=sci\_arttext&pid=S0103-97332006000700035&nrm=iso}.}
+
+\bibitem{PBE}
+\abntrefinfo{Perdew, Burke e Ernzerhof}{PERDEW; BURKE; ERNZERHOF}{1996}
+{PERDEW, J.~P.; BURKE, K.; ERNZERHOF, M. Generalized gradient approximation
+  made simple.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~77, p. 3865–3868, Oct
+  1996.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.77.3865}.}
+
+\bibitem{blyp_b}
+\abntrefinfo{Becke}{BECKE}{1988}
+{BECKE, A.~D. Density-functional exchange-energy approximation with correct
+  asymptotic behavior.
+\emph{Phys. Rev. A}, American Physical Society, v.~38, p. 3098–3100, Sep
+  1988.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevA.38.3098}.}
+
+\bibitem{blyp_b-2}
+\abntrefinfo{Lee, Yang e Parr}{LEE; YANG; PARR}{1988}
+{LEE, C.; YANG, W.; PARR, R.~G. Development of the colle-salvetti
+  correlation-energy formula into a functional of the electron density.
+\emph{Phys. Rev. B}, American Physical Society, v.~37, p. 785–789, Jan 1988.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.37.785}.}
+
+\bibitem{vdw_solidos}
+\abntrefinfo{Klimes, Bowler e Michaelides}{KLIMES; BOWLER; MICHAELIDES}{2011}
+{KLIMES, J.; BOWLER, D.~R.; MICHAELIDES, A. Van der waals density functionals
+  applied to solids.
+\emph{Phys. Rev. B}, American Physical Society, v.~83, p. 195131, May 2011.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.83.195131}.}
+
+\bibitem{article_vdw}
+\abntrefinfo{Hermann, Distasio e Tkatchenko}{HERMANN; DISTASIO;
+  TKATCHENKO}{2017}
+{HERMANN, J.; DISTASIO, R.; TKATCHENKO, A. First-principles models for van der
+  waals interactions in molecules and materials: Concepts, theory, and
+  applications.
+\emph{Chemical reviews}, v.~117, 03 2017.}
+
+\bibitem{DRSLL}
+\abntrefinfo{Dion et al.}{DION et al.}{2004}
+{DION, M. et al. Van der waals density functional for general geometries.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~92, p. 246401, Jun 2004.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.92.246401}.}
+
+\bibitem{review_new}
+\abntrefinfo{Gro{\ss} e Sakong}{GRO{SS}; SAKONG}{}
+{GRO{SS}, A.; SAKONG, S. Ab initio simulations of water/metal interfaces.
+American Chemical Society ({ACS}), v.~122, n.~12, p. 10746--10776.}
+
+\bibitem{review-electro}
+\abntrefinfo{Sundararaman, Vigil-Fowler e Schwarz}{SUNDARARAMAN; VIGIL-FOWLER;
+  SCHWARZ}{2022}
+{SUNDARARAMAN, R.; VIGIL-FOWLER, D.; SCHWARZ, K. Improving the accuracy of
+  atomistic simulations of the electrochemical interface.
+\emph{Chemical Reviews}, v.~122, n.~12, p. 10651--10674, 2022.
+PMID: 35522135.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/acs.chemrev.1c00800}.}
+
+\bibitem{smeagol1}
+\abntrefinfo{Rocha et al.}{ROCHA et al.}{2005}
+{ROCHA, A.~R. et al. Towards molecular spintronics.
+\emph{Nature Materials}, v.~4, n.~4, p. 335--339, abr. 2005.
+ISSN 1476-4660.
+Dispon{\'\i}vel em: \url{https://www.nature.com/articles/nmat1349}.}
+
+\bibitem{smeagol2}
+\abntrefinfo{Rocha et al.}{ROCHA et al.}{2006}
+{ROCHA, A.~R. et al. Spin and molecular electronics in atomically generated
+  orbital landscapes.
+\emph{Phys. Rev. B}, American Physical Society, v.~73, p. 085414, Feb 2006.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.73.085414}.}
+
+\bibitem{negf}
+\abntrefinfo{Keldysh}{KELDYSH}{1965}
+{KELDYSH, L.~V. Diagram technique for nonequilibrium processes.
+\emph{Soviet Phys. JETP}, v.~20, p. 1018--26, 1965.}
+
+\bibitem{tese-pedro}
+\abntrefinfo{Mendon{\c{c}}a}{MENDON{\c{C}}A}{}
+{MENDON{\c{C}}A, P.~B.
+\emph{Estudo da influ{\^{e}}ncia de modos vibracionais localizados nas
+  propriedades de transporte de cargas em sistemas de escala
+  nanom{\'{e}}trica}.
+Tese (Doutorado).
+Dispon{\'\i}vel em:
+  \url{https://doi.org/10.11606/t.43.2014.tde-24112014-153428}.}
+
+\bibitem{transiesta2}
+\abntrefinfo{Papior et al.}{PAPIOR et al.}{2017}
+{PAPIOR, N. et al. Improvements on non-equilibrium and transport green function
+  techniques: The next-generation transiesta.
+\emph{Computer Physics Communications}, v.~212, p. 8--24, 2017.
+ISSN 0010-4655.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S001046551630306X}.}
+
+\bibitem{transiesta1}
+\abntrefinfo{Brandbyge et al.}{BRANDBYGE et al.}{2002}
+{BRANDBYGE, M. et al. Density-functional method for nonequilibrium electron
+  transport.
+\emph{Phys. Rev. B}, American Physical Society, v.~65, p. 165401, Mar 2002.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.65.165401}.}
+
+\bibitem{transiesta3}
+\abntrefinfo{Papior et al.}{PAPIOR et al.}{2019}
+{PAPIOR, N. et al. Removing all periodic boundary conditions: Efficient
+  nonequilibrium green's function calculations.
+\emph{Phys. Rev. B}, American Physical Society, v.~100, p. 195417, Nov 2019.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevB.100.195417}.}
+
+\bibitem{transiesta4}
+\abntrefinfo{García et al.}{GARCíA et al.}{2020}
+{GARCíA, A. et al. Siesta: Recent developments and applications.
+\emph{The Journal of Chemical Physics}, v.~152, n.~20, p. 204108, 2020.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/5.0005077}.}
+
+\bibitem{forca-teo}
+\abntrefinfo{Feynman}{FEYNMAN}{1939}
+{FEYNMAN, R.~P. Forces in molecules.
+\emph{Phys. Rev.}, American Physical Society, v.~56, p. 340--343, Aug 1939.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRev.56.340}.}
+
+\bibitem{forca-teo2}
+\abntrefinfo{Schmidt}{SCHMIDT}{1938}
+{SCHMIDT, O. Einführung in die quantenchemie. von hans hellmann. verlag von
+  franz deuticke 1937. gr.-8, 350 s. preis geh. rm 20.–, geb. rm 22.–.
+\emph{Zeitschrift für Elektrochemie und angewandte physikalische Chemie},
+  v.~44, n.~4, p. 284--284, 1938.}
+
+\bibitem{force-teo3}
+\abntrefinfo{Ventra e Pantelides}{VENTRA; PANTELIDES}{2000}
+{VENTRA, M. D.; PANTELIDES, S.~T. Hellmann-feynman theorem and the definition
+  of forces in quantum time-dependent and transport problems.
+\emph{Phys. Rev. B}, American Physical Society, v.~61, p. 16207--16212, Jun
+  2000.}
+
+\bibitem{force-teo4}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2011}
+{ZHANG, R. et al. Current-induced energy barrier suppression for
+  electromigration from first principles.
+\emph{Phys. Rev. B}, American Physical Society, v.~84, p. 085445, Aug 2011.}
+
+\bibitem{siesta}
+\abntrefinfo{Soler et al.}{SOLER et al.}{2002}
+{SOLER, J.~M. et al. The {SIESTA} method for ab-initio order-n materials
+  simulation.
+\emph{Journal of Physics: Condensed Matter}, {IOP} Publishing, v.~14, n.~11, p.
+  2745–2779, mar 2002.
+Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1088\%2F0953-8984\%2F14\%2F11\%2F302}.}
+
+\bibitem{troullier_martins}
+\abntrefinfo{Troullier e Martins}{TROULLIER; MARTINS}{1991}
+{TROULLIER, N.; MARTINS, J.~L. Efficient pseudopotentials for plane-wave
+  calculations.
+\emph{Phys. Rev. B}, American Physical Society, v.~43, p. 1993–2006, Jan
+  1991.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.43.1993}.}
+
+\bibitem{phonons}
+\abntrefinfo{Parlinski}{PARLINSKI}{}
+{PARLINSKI, K. Phonons calculated from first-principles.
+{EDP} Sciences, v.~12, p. 161--166.}
+
+\bibitem{pw91}
+\abntrefinfo{Perdew et al.}{PERDEW et al.}{1992}
+{PERDEW, J.~P. et al. Atoms, molecules, solids, and surfaces: Applications of
+  the generalized gradient approximation for exchange and correlation.
+\emph{Phys. Rev. B}, American Physical Society, v.~46, p. 6671--6687, Sep 1992.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.46.6671}.}
+
+\bibitem{adrien}
+\abntrefinfo{Poissier, Ganeshan e Fernández-Serra}{POISSIER; GANESHAN;
+  FERNáNDEZ-SERRA}{2011}
+{POISSIER, A.; GANESHAN, S.; FERNáNDEZ-SERRA, M.~V. The role of hydrogen
+  bonding in water–metal interactions.
+\emph{Phys. Chem. Chem. Phys.}, The Royal Society of Chemistry, v.~13, p.
+  3375--3384, 2011.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1039/C0CP00994F}.}
+
+\bibitem{agua_exp}
+\abntrefinfo{Benedict, Gailar e Plyler}{BENEDICT; GAILAR; PLYLER}{1956}
+{BENEDICT, W.~S.; GAILAR, N.; PLYLER, E.~K. Rotation‐vibration spectra of
+  deuterated water vapor.
+\emph{The Journal of Chemical Physics}, v.~24, n.~6, p. 1139--1165, 1956.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.1742731}.}
+
+\bibitem{vdw-func}
+\abntrefinfo{Carrasco, Klime{\v{s}} e Michaelides}{CARRASCO; KLIME{\v{S}};
+  MICHAELIDES}{}
+{CARRASCO, J.; KLIME{\v{S}}, J.; MICHAELIDES, A. The role of van der waals
+  forces in water adsorption on metals.
+{AIP} Publishing, v.~138, n.~2, p. 024708.}
+
+\bibitem{Michaelides2006}
+\abntrefinfo{Michaelides}{MICHAELIDES}{2006}
+{MICHAELIDES, A. {Density functional theory simulations of water-metal
+  interfaces: Waltzing waters, a novel 2D ice phase, and more}.
+\emph{Applied Physics A: Materials Science and Processing}, v.~85, n.~4, p.
+  415--425, 2006.
+ISSN 09478396.}
+
+\bibitem{modos}
+\abntrefinfo{Seki et al.}{SEKI et al.}{2020}
+{SEKI, T. et al. The bending mode of water: A powerful probe for hydrogen bond
+  structure of aqueous systems.
+\emph{The Journal of Physical Chemistry Letters}, v.~11, n.~19, p. 8459--8469,
+  2020.
+PMID: 32931284.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/acs.jpclett.0c01259}.}
+
+\bibitem{ref-modos}
+\abntrefinfo{Tursi e Nixon}{TURSI; NIXON}{1970}
+{TURSI, A.~J.; NIXON, E.~R. Matrix‐isolation study of the water dimer in
+  solid nitrogen.
+\emph{The Journal of Chemical Physics}, v.~52, n.~3, p. 1521--1528, 1970.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.1673163}.}
+
+\bibitem{salmeron}
+\abntrefinfo{Mitsui et al.}{MITSUI et al.}{2002}
+{MITSUI, T. et al. Water diffusion and clustering on pd(111).
+\emph{Science}, v.~297, n.~5588, p. 1850--1852, 2002.
+Dispon{\'\i}vel em:
+  \url{https://www.science.org/doi/abs/10.1126/science.1075095}.}
+
+\bibitem{monomerexp1}
+\abntrefinfo{Morgenstern e Rieder}{MORGENSTERN; RIEDER}{2002}
+{MORGENSTERN, K.; RIEDER, K.-H. Formation of the cyclic ice hexamer via
+  excitation of vibrational molecular modes by the scanning tunneling
+  microscope.
+\emph{The Journal of Chemical Physics}, v.~116, n.~13, p. 5746--5752, 2002.}
+
+\bibitem{monomerexp2}
+\abntrefinfo{Morgenstern, Michely e Comsa}{MORGENSTERN; MICHELY; COMSA}{1996}
+{MORGENSTERN, M.; MICHELY, T.; COMSA, G. Anisotropy in the adsorption of
+  ${\mathrm{h}}_{2}$o at low coordination sites on pt(111).
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~77, p. 703--706, Jul
+  1996.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.77.703}.}
+
+\bibitem{layer_dft}
+\abntrefinfo{Cerd{\'{a}} et al.}{CERD{\'{A}} et al.}{}
+{CERD{\'{A}}, J. et al. Novel water overlayer growth on pd(111) characterized
+  with scanning tunneling microscopy and density functional theory.
+American Physical Society ({APS}), v.~93, n.~11, p. 116101.}
+
+\bibitem{review}
+\abntrefinfo{Bj{\"o}rneholm et al.}{BJ{\"O}RNEHOLM et al.}{2016}
+{BJ{\"O}RNEHOLM, O. et al. Water at interfaces.
+\emph{Chemical Reviews}, American Chemical Society, v.~116, n.~13, p.
+  7698--7726, Jul 2016.
+ISSN 0009-2665.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1021/acs.chemrev.6b00045}.}
+
+\bibitem{review2}
+\abntrefinfo{Hodgson e Haq}{HODGSON; HAQ}{2009}
+{HODGSON, A.; HAQ, S. Water adsorption and the wetting of metal surfaces.
+\emph{Surface Science Reports}, v.~64, n.~9, p. 381--451, 2009.
+ISSN 0167-5729.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0167572909000405}.}
+
+\bibitem{layer}
+\abntrefinfo{Michaelides, Alavi e King}{MICHAELIDES; ALAVI; KING}{2004}
+{MICHAELIDES, A.; ALAVI, A.; KING, D.~A. Insight into
+  ${\mathrm{h}}_{2}\mathrm{O}$-ice adsorption and dissociation on metal
+  surfaces from first-principles simulations.
+\emph{Phys. Rev. B}, American Physical Society, v.~69, p. 113404, Mar 2004.}
+
+\bibitem{dimer-exp}
+\abntrefinfo{Barnett e Landman}{BARNETT; LANDMAN}{1993}
+{BARNETT, R.~N.; LANDMAN, U. Born-oppenheimer molecular-dynamics simulations of
+  finite systems: Structure and dynamics of (${\mathrm{h}}_{2}$o${)}_{2}$.
+\emph{Phys. Rev. B}, American Physical Society, v.~48, p. 2081--2097, Jul 1993.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.48.2081}.}
+
+\bibitem{paladio}
+\abntrefinfo{Adams e Chen}{ADAMS; CHEN}{2011}
+{ADAMS, B.~D.; CHEN, A. The role of palladium in a hydrogen economy.
+\emph{Materials Today}, v.~14, n.~6, p. 282--289, 2011.
+ISSN 1369-7021.}
+
+\bibitem{ouro}
+\abntrefinfo{Burke}{BURKE}{2004}
+{BURKE, L.~D. Scope for new applications for gold arising from the
+  electrocatalytic behaviour of its metastable surface states.
+\emph{Gold Bulletin}, v.~37, p. 125--135, 3 2004.
+ISSN 0017-1557.
+Dispon{\'\i}vel em: \url{http://link.springer.com/10.1007/BF03215520}.}
+
+\bibitem{pd_bias_exp}
+\abntrefinfo{Grdeń et al.}{GRDEń et al.}{2008}
+{GRDEń, M. et al. Electrochemical behaviour of palladium electrode: Oxidation,
+  electrodissolution and ionic adsorption.
+\emph{Electrochimica Acta}, v.~53, n.~26, p. 7583--7598, 2008.
+ISSN 0013-4686.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0013468608006889}.}
+
+\bibitem{pd_bias_exp2}
+\abntrefinfo{Bolzán, Martins e Arvía}{BOLZáN; MARTINS; ARVíA}{1984}
+{BOLZáN, A.; MARTINS, M.; ARVíA, A. The electrodissolution of base palladium
+  in relation to the oxygen electroadsorption and electrodesorption in
+  sulphuric acid solution.
+\emph{Journal of Electroanalytical Chemistry and Interfacial Electrochemistry},
+  v.~172, n.~1, p. 221--233, 1984.
+ISSN 0022-0728.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/0022072884801886}.}
+
+\bibitem{pd_bias_exp3}
+\abntrefinfo{Tateishi et al.}{TATEISHI et al.}{1991}
+{TATEISHI, N. et al. Electrochemical properties of ultra-fine palladium
+  particles for adsorption and absorption of hydrogen in an aqueous hclo4
+  solution.
+\emph{Electrochimica Acta}, v.~36, n.~7, p. 1235--1240, 1991.
+ISSN 0013-4686.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/001346869185114M}.}
+
+\bibitem{pd_bias_layer}
+\abntrefinfo{Filhol e Bocquet}{FILHOL; BOCQUET}{2007}
+{FILHOL, J.~S.; BOCQUET, M.~L. {Charge control of the water monolayer/Pd
+  interface}.
+\emph{Chemical Physics Letters}, North-Holland, v.~438, n.~4-6, p. 203--207,
+  apr 2007.
+ISSN 00092614.
+Dispon{\'\i}vel em:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0009261407002783}.}
+
+\bibitem{material_1}
+\abntrefinfo{Toffoli}{TOFFOLI}{2012}
+{TOFFOLI, H. The many-body hamiltonian and the functional derivative - dft
+  lectures.
+November 2012.
+Dispon{\'\i}vel em:
+  \url{http://www.physics.metu.edu.tr/~hande/teaching/741-lectures/lecture-03.pdf}.}
+
+\bibitem{Zettili}
+\abntrefinfo{Zettili}{ZETTILI}{2009}
+{ZETTILI, N. \emph{Quantum Mechanics: concepts and applications}. 2nd. ed.
+  [S.l.]: John Wiley \& Sons, Ltd, 2009.
+ISBN 978-0-470-02678-6.}
+
+\bibitem{hf_pedroza}
+\abntrefinfo{Pedroza}{PEDROZA}{2017}
+{PEDROZA, A.~C. Teoria de muitos elétrons.
+\emph{Notas de Aula}, 2017.}
+
+\bibitem{perdew_zunger}
+\abntrefinfo{Perdew e Zunger}{PERDEW; ZUNGER}{1981}
+{PERDEW, J.~P.; ZUNGER, A. Self-interaction correction to density-functional
+  approximations for many-electron systems.
+\emph{Phys. Rev. B}, American Physical Society, v.~23, p. 5048–5079, May
+  1981.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.23.5048}.}
+
+\bibitem{lund}
+\abntrefinfo{Almbladh, Ekenberg e Pedroza}{ALMBLADH; EKENBERG; PEDROZA}{1983}
+{ALMBLADH, C.-O.; EKENBERG, U.; PEDROZA, A.~C. Accuracy of the hartree-fock and
+  local density approximations for electron densities: A study for light atoms.
+\emph{Physica Scripta}, {IOP} Publishing, v.~28, n.~3, p. 389–393, sep 1983.
+Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1088\%2F0031-8949\%2F28\%2F3\%2F017}.}
+
+\bibitem{tese_luana}
+\abntrefinfo{Pedroza}{PEDROZA}{2010}
+{PEDROZA, L.~S.
+\emph{Desenvolvimento de novas aproximações para simulações ab-initio}.
+Tese (Doutorado), 2010.}
+
+\bibitem{l_oxford}
+\abntrefinfo{Odashima e Capelle}{ODASHIMA; CAPELLE}{2008}
+{ODASHIMA, M.; CAPELLE, K. Empirical analysis of the lieb-oxford bound in ions
+  and molecules.
+\emph{International Journal of Quantum Chemistry}, v.~108, 11 2008.}
+
+\bibitem{perdew_pbe_beta}
+\abntrefinfo{Perdew et al.}{PERDEW et al.}{2008}
+{PERDEW, J.~P. et al. Restoring the density-gradient expansion for exchange in
+  solids and surfaces.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~100, p. 136406, Apr
+  2008.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.100.136406}.}
+
+\bibitem{revPBE}
+\abntrefinfo{Zhang e Yang}{ZHANG; YANG}{1998}
+{ZHANG, Y.; YANG, W. Comment on “generalized gradient approximation made
+  simple”.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~80, p. 890–890, Jan
+  1998.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevLett.80.890}.}
+
+\bibitem{byron}
+\abntrefinfo{Byron e Fuller}{BYRON; FULLER}{1992}
+{BYRON, F.; FULLER, R. \emph{Mathematics of Classical and Quantum Physics}.
+  [S.l.]: Dover Publications, 1992. v. 1-2. 229–232~p.
+ISBN 9780486671642.}
+
+\bibitem{book_HF_2}
+\abntrefinfo{Postnikov}{POSTNIKOV}{2007a}
+{POSTNIKOV, A. Thomas-fermi method.
+\emph{Lectures on the Density Functional Theory}, v.~1, 2007.
+Dispon{\'\i}vel em:
+  \url{https://www.home.uni-osnabrueck.de/apostnik/Lectures/DFT-1.pdf}.}
+
+\bibitem{book_base}
+\abntrefinfo{Postnikov}{POSTNIKOV}{2007b}
+{POSTNIKOV, A. Practical implementation of dft and hf calculation schemes.
+\emph{Lectures on the Density Functional Theory}, v.~4, 2007.
+Dispon{\'\i}vel em:
+  \url{https://www.home.uni-osnabrueck.de/apostnik/Lectures/DFT-4.pdf}.}
+
+\bibitem{base_slater}
+\abntrefinfo{Slater}{SLATER}{1930}
+{SLATER, J.~C. Atomic shielding constants.
+\emph{Phys. Rev.}, American Physical Society, v.~36, p. 57–64, Jul 1930.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRev.36.57}.}
+
+\bibitem{nao}
+\abntrefinfo{Junquera et al.}{JUNQUERA et al.}{2001}
+{JUNQUERA, J. et al. Numerical atomic orbitals for linear-scaling calculations.
+\emph{Phys. Rev. B}, American Physical Society, v.~64, p. 235111, Nov 2001.}
+
+\bibitem{tese_pseudo}
+\abntrefinfo{Oliveira}{OLIVEIRA}{1997}
+{OLIVEIRA, A. J.~S.
+\emph{Estudos de diferentes pseudopotenciais de norma conservada em cálculo de
+  espalhamento de elétrons por molécula}.
+107~p. Tese (Doutorado) --- Universidade Estadual de Campinas, 1997.}
+
+\bibitem{fermi}
+\abntrefinfo{Fermi}{FERMI}{1934}
+{FERMI, E. Sopra lo spostamento per pressione delle righe elevate delle serie
+  spettrali.
+\emph{Il Nuovo Cimento}, Springer Science and Business Media {LLC}, v.~11,
+  n.~3, p. 157–166, mar. 1934.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/bf02959829}.}
+
+\bibitem{fermi_2}
+\abntrefinfo{Hellmann}{HELLMANN}{1935}
+{HELLMANN, H. A new approximation method in the problem of many electrons.
+\emph{The Journal of Chemical Physics}, v.~3, n.~1, p. 61–61, 1935.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1063/1.1749559}.}
+
+\bibitem{pseudo_ref}
+\abntrefinfo{Nogueira, Castro e Marques}{NOGUEIRA; CASTRO; MARQUES}{2008}
+{NOGUEIRA, F.; CASTRO, A.; MARQUES, M. A tutorial on density functional theory.
+\emph{A Primer in Density Functional Theory}, v.~620, p. 218–256, 01 2008.}
+
+\bibitem{toffoli_pseudo}
+\abntrefinfo{Toffoli}{TOFFOLI}{2012}
+{TOFFOLI, H. Lecture viii : The pseudopotential.
+November 2012.
+Dispon{\'\i}vel em:
+  \url{http://www.physics.metu.edu.tr/~hande/teaching/741-lectures/lecture-08.pdf}.}
+
+\bibitem{pseudo_norma}
+\abntrefinfo{Hamann, Schlüter e Chiang}{HAMANN; SCHLüTER; CHIANG}{1979}
+{HAMANN, D.~R.; SCHLüTER, M.; CHIANG, C. Norm-conserving pseudopotentials.
+\emph{Phys. Rev. Lett.}, American Physical Society, v.~43, p. 1494–1497, Nov
+  1979.
+Dispon{\'\i}vel em:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.43.1494}.}
+
+\bibitem{pontosk}
+\abntrefinfo{Monkhorst e Pack}{MONKHORST; PACK}{1976}
+{MONKHORST, H.~J.; PACK, J.~D. Special points for brillouin-zone integrations.
+\emph{Phys. Rev. B}, American Physical Society, v.~13, p. 5188--5192, Jun 1976.
+Dispon{\'\i}vel em: \url{https://link.aps.org/doi/10.1103/PhysRevB.13.5188}.}
+
+\bibitem{pseudo_salvador}
+\abntrefinfo{Rivero et al.}{RIVERO et al.}{2015}
+{RIVERO, P. et al. Systematic pseudopotentials from reference eigenvalue sets
+  for dft calculations.
+\emph{Computational Materials Science}, v.~98, p. 372–389, 2015.
+ISSN 0927-0256.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0927025614007940}.}
+
+\bibitem{kittel}
+\abntrefinfo{Kittel, McEuen e Sons}{KITTEL; MCEUEN; SONS}{2018}
+{KITTEL, C.; MCEUEN, P.; SONS, J. W.~. \emph{Introduction to Solid State
+  Physics}. John Wiley \& Sons, Limited, 2018.
+ISBN 9781119454168. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=S3gAugEACAAJ}.}
+
+\bibitem{vdw-article}
+\abntrefinfo{Liu et al.}{LIU et al.}{2014}
+{LIU, B. et al. Effects of van der waals density functional corrections on
+  trends in furfural adsorption and hydrogenation on close-packed transition
+  metal surfaces.
+\emph{Surface Science}, v.~622, p. 51--59, 2014.
+ISSN 0039-6028.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0039602813003518}.}
+
+\bibitem{planar}
+\abntrefinfo{Junquera, Cohen e Rabe}{JUNQUERA; COHEN; RABE}{2007}
+{JUNQUERA, J.; COHEN, M.~H.; RABE, K.~M. Nanoscale smoothing and the analysis
+  of interfacial charge and dipolar densities.
+\emph{Journal of Physics: Condensed Matter}, {IOP} Publishing, v.~19, n.~21, p.
+  213203, may 2007.
+Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1088\%2F0953-8984\%2F19\%2F21\%2F213203}.}
+
+\bibitem{work}
+\abntrefinfo{Tran et al.}{TRAN et al.}{2019}
+{TRAN, R. et al. Anisotropic work function of elemental crystals.
+\emph{Surface Science}, v.~687, p. 48--55, 2019.
+ISSN 0039-6028.}
+
+\end{thebibliography}

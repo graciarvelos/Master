@@ -1,0 +1,90 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: monografia.aux
+A level-1 auxiliary file: texto/fichacatalografica.aux
+A level-1 auxiliary file: texto/errata.aux
+A level-1 auxiliary file: texto/folhadeaprovacao.aux
+A level-1 auxiliary file: texto/dedicatoria.aux
+A level-1 auxiliary file: texto/agradecimentos.aux
+A level-1 auxiliary file: texto/epigrafe.aux
+A level-1 auxiliary file: texto/resumo.aux
+A level-1 auxiliary file: texto/abstract.aux
+A level-1 auxiliary file: texto/introducao.aux
+A level-1 auxiliary file: texto/capitulo-1.aux
+A level-1 auxiliary file: texto/capitulo-3.aux
+A level-1 auxiliary file: texto/capitulo-4.aux
+A level-1 auxiliary file: texto/capitulo-6.aux
+A level-1 auxiliary file: texto/capitulo-7.aux
+A level-1 auxiliary file: texto/conclusao.aux
+A level-1 auxiliary file: texto/apendice-3.aux
+A level-1 auxiliary file: texto/apendice-1.aux
+A level-1 auxiliary file: texto/apendice-5.aux
+The style file: abntex2-num.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated field_info (elt_size=4) to 12245 items from 5000.
+Database file #1: abntex2-options.bib
+Database file #2: monografia.bib
+Warning--entry type for "rev_dft" isn't style-file defined
+--line 369 of file monografia.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--faltando school em tese-pedro
+Warning--campo year vazio em tese-pedro
+Warning--faltando school em tese_luana
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-num.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 105 entries,
+            6714 wiz_defined-function locations,
+            1915 strings with 32195 characters,
+and the built_in function-call counts, 155530 in all, are:
+= -- 17530
+> -- 3084
+< -- 3823
++ -- 4742
+- -- 898
+* -- 9915
+:= -- 18207
+add.period$ -- 411
+call.type$ -- 105
+change.case$ -- 1242
+chr.to.int$ -- 383
+cite$ -- 107
+duplicate$ -- 15417
+empty$ -- 5772
+format.name$ -- 4703
+if$ -- 31958
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1885
+newline$ -- 619
+num.names$ -- 416
+pop$ -- 2509
+preamble$ -- 1
+purify$ -- 452
+quote$ -- 0
+skip$ -- 15412
+stack$ -- 1
+substring$ -- 6998
+swap$ -- 6351
+text.length$ -- 290
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 3
+while$ -- 686
+width$ -- 0
+write$ -- 1603
+(There were 4 warnings)
