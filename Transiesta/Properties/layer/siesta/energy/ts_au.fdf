@@ -1,0 +1,151 @@
+SolutionMethod       Diagon
+
+SystemName  Au with water layer
+SystemLabel ts_au_layer
+
+
+
+==================================================
+==================================================
+# SPECIES AND BASIS
+
+# Number of species 
+NumberOfSpecies 4
+%block ChemicalSpeciesLabel
+  1    8   O
+  2    1   H
+%endblock ChemicalSpeciesLabel
+
+PAO.BasisType split
+%Block PAO.Basis
+O    3     -0.24233
+n=2   0   2   E    23.36061     3.39721
+     4.50769     2.64066
+     1.00000     1.00000
+n=2   1   2   E     2.78334     5.14253
+     6.14996     2.59356
+     1.00000     1.00000
+n=3   2   1   E    63.98188     0.16104
+     3.54403
+     1.00000
+H    2      0.46527
+n=1   0   2   E    99.93138     2.59932
+     4.20357     1.84463
+     1.00000     1.00000
+n=2   1   1   E    24.56504     2.20231
+     3.52816
+     1.00000
+%EndBlock PAO.Basis
+
+
+XC.functional   GGA
+XC.authors      PBE
+
+
+==================================================
+==================================================
+# K-points
+LatticeConstant    1.0 Ang
+%block LatticeVectors
+10.385837 0.0000000 0.000000 
+0.0000000 8.994398  0.000000
+0.0000000 0.0000000 54.21154716666666
+%endblock LatticeVectors
+
+
+%block kgrid_Monkhorst_Pack
+1   0   0   0.0
+0   1   0   0.0
+0   0   1   0.0
+%endblock kgrid_Monkhorst_Pack
+
+
+
+==================================================
+==================================================
+# Structure
+NumberOfAtoms 180
+
+AtomicCoordinatesFormat Ang
+%block AtomicCoordinatesAndAtomicSpecies   
+    0.55847224    3.67729365   18.99791075    1     85  O
+    0.51279259    3.70616425   18.01550690    2     86  H
+    1.40499698    3.18701486   19.14717711    2     87  H
+    0.47680838    6.72112663   18.89928481    1     88  O
+    0.57364872    5.76291078   19.09470018    2     89  H
+    1.35425735    7.11824725   19.09424437    2     90  H
+    3.15486713    8.17451442   18.99790539    1     91  O
+    3.10918986    8.20339978   18.01550017    2     92  H
+    4.00139822    7.68426283   19.14717080    2     93  H
+    3.07324645    2.22394026   18.89929599    1     94  O
+    3.17007710    1.26567892   19.09469603    2     95  H
+    3.95066118    2.62103767   19.09424513    2     96  H
+    5.75129494    3.67733330   18.99791372    1     97  O
+    5.70561964    3.70620179   18.01552933    2     98  H
+    6.59783913    3.18704681   19.14718405    2     99  H
+    5.66966134    6.72114437   18.89933541    1    100  O
+    5.76647035    5.76295294   19.09472726    2    101  H
+    6.54715823    7.11823832   19.09429926    2    102  H
+    8.34786971    8.17447208   18.99794960    1    103  O
+    8.30215190    8.20334725   18.01552223    2    104  H
+    9.19434519    7.68419047   19.14718154    2    105  H
+    8.26619172    2.22398242   18.89929955    1    106  O
+    8.36299886    1.26574525   19.09474107    2    107  H
+    9.14362840    2.62106782   19.09425480    2    108  H
+%endblock AtomicCoordinatesAndAtomicSpecies   
+
+
+
+==================================================
+==================================================
+# SCF variables
+
+MeshCutoff         500.0 Ry
+DM.MixSCF1   T
+MaxSCFIterations      500           # Maximum number of SCF iter
+DM.MixingWeight       0.01          # New DM amount for next SCF cycle
+DM.Tolerance          1.d-4         # Tolerance in maximum difference
+DM.UseSaveDM          true          # to use continuation files
+DM.NumberPulay        6
+TS.MixH               yes
+#SCF.H.Tolerance       1.d-2 eV
+==================================================
+==================================================
+# MD variables
+
+MD.FinalTimeStep 1
+MD.UseSaveXV      .true.
+SlabDipoleCorrection .true.
+
+MD.TypeOfRun CG
+
+
+%block GeometryConstraints
+ position from 1 to 84
+ position from 109 to 180
+%endblock GeometryConstraints
+
+
+
+
+==================================================
+==================================================
+# Output variables
+
+WriteMullikenPop                1
+WriteBands                      .false.
+SaveRho                         .false.
+SaveDeltaRho                    .false.
+SaveHS                          .false.
+SaveElectrostaticPotential      True 
+SaveTotalPotential              no
+WriteCoorXmol                   .true.
+WriteMDXmol                     .true.
+WriteMDhistory                  .false.
+WriteEigenvalues                yes
+#WriteDenchar			.true.
+
+
+==================================================
+==================================================
+

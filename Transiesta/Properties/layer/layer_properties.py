@@ -11,7 +11,7 @@ from ase.io import read
 from ase.visualize import view
 from ase.geometry.analysis import Analysis
 
-sys=read("ts_au_layer.xyz")
+sys=read("./siesta_one/inicial.xyz")
 
 au=[]
 o=[]
